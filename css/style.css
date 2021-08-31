@@ -1,0 +1,661 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, font, img, ins, kbd, q, s, samp,small, strike, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,caption, tfoot, thead, th{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}strong{font-weight:bold}em{font-style:italic}:focus{outline:0}body{line-height:1;color:black;background:white}ol, ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption, th, td{text-align:left;font-weight:normal}blockquote:before, blockquote:after, q:before, q:after{content:""}blockquote, q{quotes:"" ""}
+
+@font-face {
+	font-family: 'Bahnschrift';
+	src:url('../fonts/bahnschrift.eot');
+	src:url('../fonts/bahnschrift.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bahnschrift.woff') format('woff'),
+		url('../fonts/bahnschrift.ttf') format('truetype'),
+		url('../fonts/bahnschrift.svg#Bahnschrift') format('svg')
+}
+html {
+	overflow-y:scroll
+}
+#container {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	min-width:1580px; /* 1024 */
+	min-height:920px; /* 830 */
+	background:#ffffff
+}
+#horizont{
+	width:100%;
+	height:800px; /* 1530 */
+	position:absolute;
+	top:50%;
+	left:0;
+	margin-top:-410px;
+	/*background:url('../images/hazhatter.png') 0 0 repeat-x;*/
+	background-position:0px -216px
+}
+#haz {
+	width:1580px; /* 1024 */
+	height:866px; /* 830 */
+	position:relative;
+	top:50%;
+	left:50%;
+	margin-left:-790px; /* 512 */
+	margin-top:-450px;
+	background-image:url('../images/gerbeaud-haz.jpg');
+	
+}
+#titles::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#logo {
+  float: left;
+  margin-left: 305px;
+  margin-top: 0px;
+}
+#mkvm {
+  float: left;
+  margin-left: 2px;
+  margin-top: 80px;
+}
+/* IKONOK */
+#balnyil {
+	width:43px;
+	height:43px;
+	position:absolute;
+	top:805px;
+	left:400px;
+	background-image:url('../images/nav_bal_nyil.png');
+	background-position:0px 0px
+}
+#jobbnyil {
+	width:43px;
+	height:43px;
+	position:absolute;
+	top:805px;
+	left:450px;
+	background-image:url('../images/nav_jobb_nyil.png');
+	background-position:0px 0px
+}
+#nyilak {
+	width:43px;
+	height:43px;
+	position:absolute;
+	top:805px;
+	left:500px;
+	background-image:url('../images/nav_4irany.png');
+	background-position:0px 0px
+}
+#video {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:784px;
+	left:910px;
+	background-image:url('../images/nav_video.png');
+	background-position:0px 0px
+}
+#konyakosmeggy {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:784px;
+	left:990px;
+	background-image:url('../images/nav_konyakosmeggy.png');
+	background-position:0px 0px
+}
+#info {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:784px;
+	left:1070px;
+	background-image:url('../images/nav_info.png');
+	background-position:0px 0px
+}
+#eng {
+	width:25px;
+	height:24px;
+	position:absolute;
+	top:140px;
+	left:1116px;
+	background-image:url('../images/en1.png');
+	background-position:0px 0px
+}
+#eng:hover {
+	background-image:url('../images/en2.png');
+	background-position:0px 0px
+}
+#hun {
+	width:25px;
+	height:24px;
+	position:absolute;
+	top:140px;
+	left:1082px;
+	background-image:url('../images/hu2.png');
+	background-position:0px 0px
+}
+#hun:hover {
+	background-image:url('../images/hu1.png');
+	background-position:0px 0px
+}
+#nka {
+	width:32px;
+	height:167px;
+	position:absolute;
+	top:680px;
+	left:320px;
+	background-image:url('../images/nka_logo.png');
+}
+#title, title2,
+#buborek2 {
+	width:360px;
+	height:72px;
+	position:absolute;
+	top:52px;
+	left:800px;
+	background-image:url('../images/gerbeaud_haz_felirat.png');
+	background-position:0px 0px;
+	padding-top:0px;
+	text-align:center;
+	line-height:1.2em;
+	font-family:'Bahnschrift', serif;
+	font-size:18px;
+	font-weight:400
+}
+#buborek2 {
+	padding-top:62px
+}
+#buborek a:link,
+#buborek a:visited,
+#buborek2 a:link,
+#buborek2 a:visited {
+	color:black;
+	text-decoration:underline
+}
+#buborek a:hover,
+#buborek a:active,
+#buborek2 a:hover,
+#buborek2 a:active {
+	color:black;
+	text-decoration:none
+}
+/* HÁTTEREK */
+#gerbeaud-cukraszda,
+#gerbeaud-cukraszmuhely,
+#gerbeaud-csaladiszalon,
+#gerbeaud-dolgozoszoba,
+#gerbeaud-csomagolomuhely,
+#gerbeaud-tanmuhely {
+	width:1580px;
+	height:866px;
+	position: relative;
+	top:50%;
+	left:50%;
+	margin-left:-790px;
+	margin-top:-450px;
+   
+}
+#gerbeaud-cukraszda {
+	background:url('../images/cukraszda_alap2.jpg') 0 0 no-repeat
+}
+#gerbeaud-cukraszmuhely {
+	background:url('../images/cukraszmuhely_alap2.jpg') 0 0 no-repeat
+}
+#gerbeaud-csaladiszalon {
+	background:url('../images/csaladiszalon_alap2.jpg') 0 0 no-repeat
+}
+#gerbeaud-dolgozoszoba {
+	background:url('../images/dolgozoszoba_alap2.jpg') 0 0 no-repeat
+}
+#gerbeaud-csomagolomuhely {
+	background:url('../images/csomagolomuhely_alap2.jpg') 0 0 no-repeat
+}
+#gerbeaud-tanmuhely {
+	background:url('../images/tanmuhely_alap2.jpg') 0 0 no-repeat
+}
+/* FELIRATOK */
+#title-cukraszmuhely {
+	width:405px;
+	height:71px;
+	position:absolute;
+	top:54px;
+	left:760px;
+	background-image:url('../images/cukraszmuhely_felirat.png');
+	background-position:0px 0px;
+	padding-top:0px;
+}
+#title-cukraszda {
+	width:287px;
+	height:70px;
+	position:absolute;
+	top:54px;
+	left:870px;
+	background-image:url('../images/cukraszda_felirat.png');
+	background-position:0px 0px;
+	padding-top:0px;
+}
+#title-csaladi-szalon {
+	width:412px;
+	height:73px;
+	position:absolute;
+	top:54px;
+	left:750px;
+	background-image:url('../images/csaladiszalon_felirat.png');
+	background-position:0px 0px;
+	padding-top:0px;
+}
+#title-dolgozoszoba {
+	width:412px;
+	height:73px;
+	position:absolute;
+	top:54px;
+	left:750px;
+	background-image:url('../images/dolgozoszoba_felirat.png');
+	background-position:0px 0px;
+	padding-top:0px;
+}
+#title-csomagolomuhely {
+	width:520px;
+	height:74px;
+	position:absolute;
+	top:54px;
+	left:634px;
+	background-image:url('../images/csomagolomuhely_felirat.png');
+	background-position:0px 0px;
+	padding-top:0px;
+}
+#title-tanmuhely {
+	width:273px;
+	height:74px;
+	position:absolute;
+	top:54px;
+	left:880px;
+	background-image:url('../images/tanmuhely_felirat.png');
+	background-position:0px 0px;
+	padding-top:0px;
+}
+#div {
+	font-family:'IMFELLDoublePicaRoman', serif;
+	font-size:36px;
+	margin-top:15px
+}
+/* BUBORÉKOK */
+/* Cukrászműhely */
+.cukrasz0 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8AgCQAEHwEaXsb4awAAAABJRU5ErkJggg==);    
+	width:90px;
+	height:280px;
+	position:absolute;
+	top:290px;
+	left:280px;
+}
+.cukrasz1 {
+	/*background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HgAGgwJ/lK3Q6wAAAABJRU5ErkJggg==);*/
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);    
+	width:98px;
+	height:330px;
+	position:absolute;
+	top:368px;
+	left:520px;
+}
+.cukrasz2 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);
+	width:80px;
+	height:150px;
+	position:absolute;
+	top:368px;
+	left:1076px;
+}
+.cukrasz3 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);    
+	width:40px;
+	height:74px;
+	position:absolute;
+	top:362px;
+	left:720px;
+}
+.cukrasz4 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);    
+	width:50px;
+	height:74px;
+	position:absolute;
+	top:362px;
+	left:800px;
+}
+.cukrasz5 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);    
+	width:42px;
+	height:54px;
+	position:absolute;
+	top:378px;
+	left:866px;
+}
+/* BUBORÉKOK */
+/* Cukrászda */
+.vasarlo1 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);  
+	width:30px;
+	height:90px;
+	position:absolute;
+	top:400px;
+	left:654px;
+}
+.vasarlo2 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);  
+	width:30px;
+	height:100px;
+	position:absolute;
+	top:400px;
+	left:685px;
+}
+.ferfi1 {
+	width:50px;
+	height:140px;
+	position:absolute;
+	top:490px;
+	left:480px;
+}
+.ferfi2 {
+	width:50px;
+	height:250px;
+	position:absolute;
+	top:420px;
+	left:980px;
+}
+.holgy {
+	width:50px;
+	height:140px;
+	position:absolute;
+	top:505px;
+	left:540px;
+}
+.kislany {
+	width:40px;
+	height:180px;
+	position:absolute;
+	top:488px;
+	left:1086px;
+}
+/* BUBORÉKOK */
+/* Családi szalon */
+.csalad1 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);  
+	width:76px;
+	height:240px;
+	position:absolute;
+	top:295px;
+	left:920px;
+}
+.csalad2 {
+	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);  
+	width:60px;
+	height:130px;
+	position:absolute;
+	top:350px;
+	left:997px;
+}
+/* BUBORÉKOK */
+/* Csomagoló műhely */
+.csomagolo {
+	width:130px;
+	height:280px;
+	position:absolute;
+	top:360px;
+	left:990px;
+}
+
+/* AKTíV ELEMEK */
+/* 1-Gerbeaud-ház */
+#auto {
+	width:327px;
+	height:135px;
+	position:absolute;
+	z-index: 99;
+	top:648px;
+	left:358px
+}
+#cukraszmuhely {
+	width:394px;
+	height:104px;
+	position:absolute;
+	top:647px;
+	left:655px
+}
+#cukraszda {
+	width:725px;
+	height:97px;
+	position:absolute;
+	top:552px;
+	left:351px
+}
+#kirakat {
+	width:173px;
+	height:144px;
+	position:absolute;
+	top:569px;
+	left:1084px
+}
+#dolgozoszoba {
+	width:215px;
+	height:80px;
+	position:absolute;
+	top:478px;
+	left:1085px
+}
+#csaladiszalon {
+	width:575px;
+	height:73px;
+	position:absolute;
+	top:479px;
+	left:469px
+}
+#csomagolomuhely {
+	width:650px;
+	height:80px;
+	position:absolute;
+	top:411px;
+	left:621px
+}
+#tanmuhely {
+	width:712px;
+	height:109px;
+	position:absolute;
+	top:324px;
+	left:577px
+}
+#dolgozoiszallas {
+	width:432px;
+	height:137px;
+	position:absolute;
+	top:225px;
+	left:834px
+}
+/* AKTí­V ELEMEK */
+/* 2-Cukrászműhely */
+#muhelylampak {
+	width:204px;
+	height:116px;
+	position:absolute;
+	top:258px;
+	left:787px
+}
+#uvegek {
+	width:82px;
+	height:83px;
+	position:absolute;
+	top:433px;
+	left:736px
+}
+#ananasz {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:499px;
+	left:643px
+}
+#gyumolcs {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:453px;
+	left:896px
+}
+#torta {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:414px;
+	left:1025px
+}
+/* AKTíV ELEMEK */
+/* 3-Cukrászda */
+#cukifenyek {
+	width:798px;
+	height:228px;
+	position:absolute;
+	top:157px;
+	left:458px
+}
+#cukivirag {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:574px;
+	left:620px
+}
+#cukikave {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:600px;
+	left:704px
+}
+#cukidoboz {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:356px;
+	left:1147px
+}
+#kekno {
+	width:105px;
+	height:198px;
+	position:absolute;
+	top:455px;
+	left:1112px
+}
+#lilano {
+	width:134px;
+	height:243px;
+	position:absolute;
+	top:487px;
+	left:728px
+}
+/* AKTíV ELEMEK */
+/* 4-Családi szalon */
+#kandallo {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:308px;
+	left:789px
+}
+#szobor {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:263px;
+	left:1179px
+}
+#konyvek {
+	width:62px;
+	height:62px;
+	position:absolute;
+	top:330px;
+	left:728px
+}
+#level {
+	width:53px;
+	height:55px;
+	position:absolute;
+	top:472px;
+	left:830px
+}
+#gerbeaud {
+	width:287px;
+	height:319px;
+	position:absolute;
+	top:358px;
+	left:555px
+}
+#kuglerkep {
+	width:173px;
+	height:266px;
+	position:absolute;
+	top:181px;
+	left:382px
+}
+#gerbeaudkep {
+	width:125px;
+	height:169px;
+	position:absolute;
+	top:239px;
+	left:820px
+}
+#lovagkep {
+	width:101px;
+	height:159px;
+	position:absolute;
+	top:183px;
+	left:1200px
+}
+/* AKTíV ELEMEK */
+/* 6-Csomagoló műhely */
+#doboz {
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:473px;
+	left:464px
+}
+#nehezek {
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:507px;
+	left:612px
+}
+#papirtekercs {
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:356px;
+	left:691px
+}
+/* AKTí­V ELEMEK */
+/* 7-Tanműhely */
+#tyuktal {
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:593px;
+	left:514px
+}
+#habnyomo {
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:547px;
+	left:565px
+}
+#keverotal {
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:471px;
+	left:771px
+}
+
+.hiddenPic {
+	display:none
+}

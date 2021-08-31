@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML>
+<html lang="hu_HU">
+
+<head>
+	<title>Édes birodalom - Tanműhely</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/bubble.css" type="text/css">
+	<link rel="stylesheet" href="css/dark.css" type="text/css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<script src="js/jbox.all.min.js"></script>
+	<script type="text/javascript" src="js/buborek.js"></script>
+	<div id="container">
+		<div id="gerbeaud-tanmuhely">
+			<div id="titles">
+				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
+				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
+			</div>
+
+			<div id="title-tanmuhely"></div>
+			<div id="nka" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='https://www.nka.hu'"
+				style="cursor: pointer;"></div>
+			<div id="balnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+				style="cursor: pointer;"></div>
+			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+				style="cursor: pointer;"></div>
+			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+				style="cursor: pointer;"></div>
+			<div id="info" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+				style="cursor: pointer;"></div>
+
+
+			<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+				style="cursor: pointer;"></div>
+			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszmuhely.html'"
+				style="cursor: pointer;"></div>
+
+			<a href="#">
+				<img id="tyuktal" src="images/tyuktal_alap.png" width="60" height="60">
+				<script>
+					$(function () {
+						$("#tyuktal").hover(function () {
+							$(this).fadeOut(10, function () {
+								$(this).attr("src", "images/tyuktal_fenyes.png");
+								$(this).fadeIn(70);
+							});
+						}, function () {
+							$(this).attr("src", "images/tyuktal_alap.png");
+						}
+						);
+					});
+				</script>
+			</a>
+
+			<a href="#">
+				<img id="habnyomo" src="images/habnyomo_alap.png" width="60" height="60">
+				<script>
+					$(function () {
+						$("#habnyomo").hover(function () {
+							$(this).fadeOut(10, function () {
+								$(this).attr("src", "images/habnyomo_fenyes.png");
+								$(this).fadeIn(70);
+							});
+						}, function () {
+							$(this).attr("src", "images/habnyomo_alap.png");
+						}
+						);
+					});
+				</script>
+			</a>
+
+			<a href="#">
+				<img id="keverotal" src="images/keverotal_alap.png" width="60" height="60">
+				<script>
+					$(function () {
+						$("#keverotal").hover(function () {
+							$(this).fadeOut(10, function () {
+								$(this).attr("src", "images/keverotal_fenyes.png");
+								$(this).fadeIn(70);
+							});
+						}, function () {
+							$(this).attr("src", "images/keverotal_alap.png");
+						}
+						);
+					});
+				</script>
+			</a>
+
+		</div>
+	</div>
+</body>
+
+</html>
