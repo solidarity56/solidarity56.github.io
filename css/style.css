@@ -403,7 +403,29 @@ html {
 	top:360px;
 	left:990px;
 }
-
+/* BUBORÉKOK */
+/* Tanműhely */
+.tancukrasz2 {
+	width:95px;
+	height:170px;
+	position:absolute;
+	top:410px;
+	left:656px;
+}
+.tancukrasz3 {
+	width:110px;
+	height:100px;
+	position:absolute;
+	top:380px;
+	left:768px;
+}
+.tancukrasz4 {
+	width:78px;
+	height:180px;
+	position:absolute;
+	top:390px;
+	left:876px;
+}
 /* AKTíV ELEMEK */
 /* 1-Gerbeaud-ház */
 #auto {
@@ -634,6 +656,20 @@ html {
 }
 /* AKTí­V ELEMEK */
 /* 7-Tanműhely */
+#asztal {
+	width:705px;
+	height:243px;
+	position:absolute;
+	top:570px;
+	left:351px
+}
+#tancukrasz1 {
+	width:155px;
+	height:209px;
+	position:absolute;
+	top:405px;
+	left:493px
+}
 #tyuktal {
 	width:60px;
 	height:60px;

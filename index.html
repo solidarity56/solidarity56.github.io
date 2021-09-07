@@ -7,7 +7,7 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-	<meta property="og:title" content="Édes birodalom - Gerbeaud-há">
+	<meta property="og:title" content="Édes birodalom - Gerbeaud-ház">
 	<meta property="og:type" content="activity">
 	<meta property="og:url" content="index.html">
 	<meta property="og:image" content="gerbeaud_haz.jpg">
@@ -64,8 +64,7 @@
 				style="cursor: pointer;"></div>
 			<div id="video" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
-			<div id="konyakosmeggy" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
+			<a id="konyakosmeggy" href="#" title="konyakosmeggy"></a>
 			<a id="info" href="#" title="info"></a>
 
 			<a href="cukraszmuhely.html">
@@ -254,6 +253,26 @@
 		$(document).ready(function () {
 			$('.popupCloseButton').on('click', function (e) {
 				$('.popupText').fadeOut(90);
+			});
+		});
+	</script>
+	<script>
+		function popUpCal() {
+			var url = "konyakosmeggy/0.pdf";
+			var width = 700;
+			var height = 600;
+			var left = parseInt((screen.availWidth / 2) - (width / 2));
+			var top = parseInt((screen.availHeight / 2) - (height / 2));
+			var windowFeatures = "width=" + width + ",height=" + height +
+				",status,resizable,left=" + left + ",top=" + top +
+				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+
+			window.open(url, "subWind", windowFeatures, "POS");
+		}
+		//$$('konyakosmeggy').invoke('on', 'click', popUpCal();
+		$(document).ready(function () {
+			$('#konyakosmeggy').on('click', function (e) {
+				popUpCal();
 			});
 		});
 	</script>

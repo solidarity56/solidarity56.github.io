@@ -40,6 +40,51 @@
 			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszmuhely.html'"
 				style="cursor: pointer;"></div>
 
+				<a href="#">
+					<img id="tancukrasz1" src="images/tancukrasz_alap.png" width="155" height="209" />
+					<script>
+						$(function () {
+							$("#tancukrasz1").hover(function () {
+								$(this).fadeOut(10, function () {
+									$(this).attr("src", "images/tancukrasz_fenyes.png");
+									$(this).fadeIn(70);
+									$(this).addClass('jsbTooltip');
+									$(this).attr('title', 'Utoljára mondom: F-I-N-O-M-A-N nyomja');
+									$('.jsbTooltip').jBox('Tooltip', {
+										attach: '.tooltip',
+										trigger: 'mouseenter',
+										position: {
+											x: 'center',
+											y: 'top'
+										},
+										width: 140
+									});
+								});
+							}, function () {
+								$(this).attr("src", "images/tancukrasz_alap.png");
+							}
+							);
+						});
+					</script>
+				</a>
+
+			<a href="#">
+				<img id="asztal" src="images/asztal_alap.png" width="705" height="243">
+				<script>
+					$(function () {
+						$("#asztal").hover(function () {
+							$(this).fadeOut(10, function () {
+								$(this).attr("src", "images/asztal_fenyes.png");
+								$(this).fadeIn(70);
+							});
+						}, function () {
+							$(this).attr("src", "images/asztal_alap.png");
+						}
+						);
+					});
+				</script>
+			</a>
+
 			<a href="#">
 				<img id="tyuktal" src="images/tyuktal_alap.png" width="60" height="60">
 				<script>
@@ -90,6 +135,17 @@
 					});
 				</script>
 			</a>
+
+			<div class="tancukrasz2" id="szoveg3" onmouseover="this.style.cursor='pointer';"
+				title="Éretm én. Nem hülye vagyok, csak nem sikerölt."></div>
+			<div class="tancukrasz3" id="szoveg4" onmouseover="this.style.cursor='pointer';"
+				title="Bezzeg velem nem volt ilyen türelmes inas koromban.">
+			</div>
+			<div class="tancukrasz4" id="szoveg5" onmouseover="this.style.cursor='pointer';"
+			title="Bár csak ellógtam volna a vurstliba ehelyett.">
+		</div>
+
+
 
 		</div>
 	</div>
