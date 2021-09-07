@@ -256,9 +256,10 @@
 			});
 		});
 	</script>
+	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
 	<script>
-		function popUpCal() {
-			var url = "konyakosmeggy/0.pdf";
+		function popUpCal(url) {
+			//var url = "konyakosmeggy/0.pdf";
 			var width = 700;
 			var height = 600;
 			var left = parseInt((screen.availWidth / 2) - (width / 2));
@@ -272,7 +273,7 @@
 		//$$('konyakosmeggy').invoke('on', 'click', popUpCal();
 		$(document).ready(function () {
 			$('#konyakosmeggy').on('click', function (e) {
-				popUpCal();
+				popUpCal("konyakosmeggy/0.pdf");
 			});
 		});
 	</script>

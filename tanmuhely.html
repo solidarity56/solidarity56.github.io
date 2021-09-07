@@ -31,6 +31,7 @@
 				style="cursor: pointer;"></div>
 			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
+			<!-- <a id="konyakosmeggy" href="#" title="konyakosmeggy"></a> -->
 			<div id="info" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
 
@@ -40,33 +41,33 @@
 			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszmuhely.html'"
 				style="cursor: pointer;"></div>
 
-				<a href="#">
-					<img id="tancukrasz1" src="images/tancukrasz_alap.png" width="155" height="209" />
-					<script>
-						$(function () {
-							$("#tancukrasz1").hover(function () {
-								$(this).fadeOut(10, function () {
-									$(this).attr("src", "images/tancukrasz_fenyes.png");
-									$(this).fadeIn(70);
-									$(this).addClass('jsbTooltip');
-									$(this).attr('title', 'Utoljára mondom: F-I-N-O-M-A-N nyomja');
-									$('.jsbTooltip').jBox('Tooltip', {
-										attach: '.tooltip',
-										trigger: 'mouseenter',
-										position: {
-											x: 'center',
-											y: 'top'
-										},
-										width: 140
-									});
+			<a href="#">
+				<img id="tancukrasz1" src="images/tancukrasz_alap.png" width="155" height="209" />
+				<script>
+					$(function () {
+						$("#tancukrasz1").hover(function () {
+							$(this).fadeOut(10, function () {
+								$(this).attr("src", "images/tancukrasz_fenyes.png");
+								$(this).fadeIn(70);
+								$(this).addClass('jsbTooltip');
+								$(this).attr('title', 'Utoljára mondom: F-I-N-O-M-A-N nyomja');
+								$('.jsbTooltip').jBox('Tooltip', {
+									attach: '.tooltip',
+									trigger: 'mouseenter',
+									position: {
+										x: 'center',
+										y: 'top'
+									},
+									width: 140
 								});
-							}, function () {
-								$(this).attr("src", "images/tancukrasz_alap.png");
-							}
-							);
-						});
-					</script>
-				</a>
+							});
+						}, function () {
+							$(this).attr("src", "images/tancukrasz_alap.png");
+						}
+						);
+					});
+				</script>
+			</a>
 
 			<a href="#">
 				<img id="asztal" src="images/asztal_alap.png" width="705" height="243">
@@ -142,13 +143,29 @@
 				title="Bezzeg velem nem volt ilyen türelmes inas koromban.">
 			</div>
 			<div class="tancukrasz4" id="szoveg5" onmouseover="this.style.cursor='pointer';"
-			title="Bár csak ellógtam volna a vurstliba ehelyett.">
-		</div>
-
-
-
+				title="Bár csak ellógtam volna a vurstliba ehelyett.">
+			</div>
 		</div>
 	</div>
+		<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
+		<script>
+			function popUpCal(url) {
+				var width = 700;
+				var height = 600;
+				var left = parseInt((screen.availWidth / 2) - (width / 2));
+				var top = parseInt((screen.availHeight / 2) - (height / 2));
+				var windowFeatures = "width=" + width + ",height=" + height +
+					",status,resizable,left=" + left + ",top=" + top +
+					"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+	
+				window.open(url, "subWind", windowFeatures, "POS");
+			}
+			$(document).ready(function () {
+				$('#konyakosmeggy').on('click', function (e) {
+					popUpCal("konyakosmeggy/7.pdf");
+				});
+			});
+		</script>
 </body>
 
 </html>
