@@ -1,148 +1,377 @@
 ﻿<!DOCTYPE HTML>
+
 <html lang="hu_HU">
 
+
+
 <head>
+
 	<title>Édes birodalom - Dolgozószoba</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
+
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+
 	<link rel="stylesheet" href="css/bubble.css" type="text/css">
+
 	<link rel="stylesheet" href="css/dark.css" type="text/css">
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
+
+
 <body>
+
 	<script src="js/jbox.all.min.js"></script>
+
 	<script type="text/javascript" src="js/buborek.js"></script>
+
 	<div id="container">
+
 		<div id="gerbeaud-dolgozoszoba">
-			<div id="titles">
-				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
-				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
+
+			<div class="popupText" id="infotext1"><strong>Gerbeaud-ház</strong><br><br>
+
+				Üdvözöljük látogatóinkat a Gerbeaud Cukrászdánál, ami a 19. század óta ékesíti a budapesti
+
+				Vörösmarty teret. A napjainkban látható négyemeletes, belső udvarokkal tagolt, szecessziós-késő
+
+				eklektikus épület magán hordozza egykori híres tulajdonosának, Gerbeaud Emilnek (1854-1919) a
+
+				kézjegyét, aki 1884-ben érkezett Magyarországra, hogy átvegye Kugler Henrik (1930-1905)
+
+				cukrászüzletét. Gerbeaud élete végéig azon fáradozott, hogy bővítse és fejlessze vállalkozását.<br><br>
+
+				A Gerbeaud-ház épületegyüttesében nem csak a cukrászda és a cukrászműhely került kialakításra: az
+
+				első emeleten a Gerbeaud család lakhelye és a cég központi irodája volt, a másodikon csomagoló
+
+				működött, a harmadikon tanműhely, a negyediken pedig dolgozói lakások voltak.<br><br>
+
+				Egykor országszerte számos Gerbeaud üzletbe, gyárba, céges ingatlanba és hirdetésekbe botlottunk
+
+				volna, mára ez az egy épület maradt fenn abból az ,,Édes Birodalom”-ból, amit a híres cukrász a
+
+				családjával hosszú évtizedek alatt épített fel. Tartson velünk és ismerje meg az egyik leghíresebb
+
+				magyarországi cukrász történetét!
+
+				<div class="popupCloseButton">&times;</div>
+
 			</div>
 
+			<div id="titles">
+
+				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
+
+				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
+
+			</div>
+
+
+
 			<div id="title-dolgozoszoba"></div>
+
 			<div id="nka" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='https://www.nka.hu'"
+
 				style="cursor: pointer;"></div>
+
 			<div id="balnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+
 				style="cursor: pointer;"></div>
+
 			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+
 				style="cursor: pointer;"></div>
+
 			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+
 				style="cursor: pointer;"></div>
+
+			<div id="konyakosmeggy" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+
+				style="cursor: pointer;"></div>
+
 			<div id="info" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+
 				style="cursor: pointer;"></div>
+
+
 
 			<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+
 				style="cursor: pointer;"></div>
+
 			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszmuhely.html'"
+
 				style="cursor: pointer;"></div>
 
+
+
 			<a href="#">
-				<img id="gerbeaud" src="images/gerbeaud_alap.png" width="62" height="62">
+
+				<img id="gerbeaud" class="effect" src="images/gerbeaud_alap.png" width="62" height="62">
+
 				<script>
+
 					$(function () {
+
 						$("#gerbeaud").hover(function () {
+
 							$(this).fadeOut(10, function () {
+
 								$(this).attr("src", "images/gerbeaud_fenyes.png");
+
 								$(this).fadeIn(70);
+
 							});
+
 						}, function () {
+
 							$(this).attr("src", "images/gerbeaud_alap.png");
+
 						}
+
 						);
+
 					});
+
 				</script>
+
 			</a>
 
+
+
 			<a href="#">
-				<img id="konyvek" src="images/konyvek_alap.png" width="62" height="62">
+
+				<img id="konyvek" class="effect" src="images/konyvek_alap.png" width="62" height="62">
+
 				<script>
+
 					$(function () {
+
 						$("#konyvek").hover(function () {
+
 							$(this).fadeOut(10, function () {
+
 								$(this).attr("src", "images/konyvek_fenyes.png");
+
 								$(this).fadeIn(70);
+
 							});
+
 						}, function () {
+
 							$(this).attr("src", "images/konyvek_alap.png");
+
 						}
+
 						);
+
 					});
+
 				</script>
+
 			</a>
 
+
+
 			<a href="#">
-				<img id="level" src="images/level_alap.png" width="62" height="62">
+
+				<img id="level" class="effect" src="images/level_alap.png" width="62" height="62">
+
 				<script>
+
 					$(function () {
+
 						$("#level").hover(function () {
+
 							$(this).fadeOut(10, function () {
+
 								$(this).attr("src", "images/level_fenyes.png");
+
 								$(this).fadeIn(70);
+
 							});
+
 						}, function () {
+
 							$(this).attr("src", "images/level_alap.png");
+
 						}
+
 						);
+
 					});
+
 				</script>
+
 			</a>
 
+
+
 			<a href="#">
-				<img id="kuglerkep" src="images/kuglerkep_alap.png" width="62" height="62">
+
+				<img id="kuglerkep" class="effect" src="images/kuglerkep_alap.png" width="62" height="62">
+
 				<script>
+
 					$(function () {
+
 						$("#kuglerkep").hover(function () {
+
 							$(this).fadeOut(10, function () {
+
 								$(this).attr("src", "images/kuglerkep_fenyes.png");
+
 								$(this).fadeIn(70);
+
 							});
+
 						}, function () {
+
 							$(this).attr("src", "images/kuglerkep_alap.png");
+
 						}
+
 						);
+
 					});
+
 				</script>
+
 			</a>
 
+
+
 			<a href="#">
-				<img id="gerbeaudkep" src="images/gerbeaudkep_alap.png" width="62" height="62">
+
+				<img id="gerbeaudkep" class="effect" src="images/gerbeaudkep_alap.png" width="62" height="62">
+
 				<script>
+
 					$(function () {
+
 						$("#gerbeaudkep").hover(function () {
+
 							$(this).fadeOut(10, function () {
+
 								$(this).attr("src", "images/gerbeaudkep_fenyes.png");
+
 								$(this).fadeIn(70);
+
 							});
+
 						}, function () {
+
 							$(this).attr("src", "images/gerbeaudkep_alap.png");
+
 						}
+
 						);
+
 					});
+
 				</script>
+
 			</a>
 
+
+
 			<a href="#">
-				<img id="lovagkep" src="images/lovagkep_alap.png" width="62" height="62">
+
+				<img id="lovagkep" class="effect" src="images/lovagkep_alap.png" width="62" height="62">
+
 				<script>
+
 					$(function () {
+
 						$("#lovagkep").hover(function () {
+
 							$(this).fadeOut(10, function () {
+
 								$(this).attr("src", "images/lovagkep_fenyes.png");
+
 								$(this).fadeIn(70);
+
 							});
+
 						}, function () {
+
 							$(this).attr("src", "images/lovagkep_alap.png");
+
 						}
+
 						);
+
 					});
+
 				</script>
+
 			</a>
+
+
 
 		</div>
+
 	</div>
+
+<!-- INFO BUTTON SCRIPT  -->
+
+<script>
+
+	$(document).ready(function () {
+
+		$('#info').on('click', function (e) {
+
+			$('.popupText').fadeIn(90);
+
+		});
+
+	});
+
+	$(document).ready(function () {
+
+		$('.popupCloseButton').on('click', function (e) {
+
+			$('.popupText').fadeOut(90);
+
+		});
+
+	});
+
+</script>
+
+	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
+	<script>
+		function popUpCal(url) {
+			//var url = "konyakosmeggy/5.pdf";
+			var width = 700;
+			var height = 600;
+			var left = parseInt((screen.availWidth / 2) - (width / 2));
+			var top = parseInt((screen.availHeight / 2) - (height / 2));
+			var windowFeatures = "width=" + width + ",height=" + height +
+				",status,resizable,left=" + left + ",top=" + top +
+				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+
+			window.open(url, "subWind", windowFeatures, "POS");
+		}
+		//$$('konyakosmeggy').invoke('on', 'click', popUpCal();
+		$(document).ready(function () {
+			$('#konyakosmeggy').on('click', function (e) {
+				popUpCal("konyakosmeggy/konyakosmeggy5.html");
+			});
+		});
+	</script>
+
 </body>
+
+
 
 </html>

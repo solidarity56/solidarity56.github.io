@@ -185,8 +185,7 @@ html {
 #gerbeaud-csaladiszalon,
 #gerbeaud-dolgozoszoba,
 #gerbeaud-csomagolomuhely,
-#gerbeaud-tanmuhely,
-#gerbeaud-dolgozoiszallas {
+#gerbeaud-tanmuhely {
 	width:1580px;
 	height:866px;
 	position: relative;
@@ -213,9 +212,6 @@ html {
 }
 #gerbeaud-tanmuhely {
 	background:url('../images/tanmuhely_alap2.jpg') 0 0 no-repeat
-}
-#gerbeaud-dolgozoiszallas {
-	background:url('../images/dolgozoiszallas_alap2.jpg') 0 0 no-repeat
 }
 /* FELIRATOK */
 #title-cukraszmuhely {
@@ -278,16 +274,6 @@ html {
 	background-position:0px 0px;
 	padding-top:0px;
 }
-#title-dolgozoiszallas {
-	width:481px;
-	height:74px;
-	position:absolute;
-	top:54px;
-	left:674px;
-	background-image:url('../images/dolgozoiszallas_felirat.png');
-	background-position:0px 0px;
-	padding-top:0px;
-}
 #div {
 	font-family:'IMFELLDoublePicaRoman', serif;
 	font-size:36px;
@@ -344,14 +330,6 @@ html {
 	top:378px;
 	left:866px;
 }
-.cukrasz6 {
-	background:    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);    
-	width:50px;
-	height:74px;
-	position:absolute;
-	top:377px;
-	left:952px;
-}
 /* BUBORÉKOK */
 /* Cukrászda */
 .vasarlo1 {
@@ -377,13 +355,12 @@ html {
 	top:490px;
 	left:480px;
 }
-/* apa + kalap*/
 .ferfi2 {
-	width:102px;
-	height:268px;
+	width:50px;
+	height:250px;
 	position:absolute;
-	top:413px;
-	left:952px
+	top:420px;
+	left:980px;
 }
 .holgy {
 	width:50px;
@@ -427,15 +404,28 @@ html {
 	left:990px;
 }
 /* BUBORÉKOK */
-/* Dolgozói szállás */
-.lakotars {
-	width:94px;
-	height:256px;
+/* Tanműhely */
+.tancukrasz2 {
+	width:95px;
+	height:170px;
 	position:absolute;
-	top:371px;
-	left:808px;
+	top:410px;
+	left:656px;
 }
-
+.tancukrasz3 {
+	width:110px;
+	height:100px;
+	position:absolute;
+	top:380px;
+	left:768px;
+}
+.tancukrasz4 {
+	width:78px;
+	height:180px;
+	position:absolute;
+	top:390px;
+	left:876px;
+}
 /* AKTíV ELEMEK */
 /* 1-Gerbeaud-ház */
 #auto {
@@ -569,12 +559,6 @@ html {
 	top:356px;
 	left:1147px
 }
-.effect {animation: luktet 2s linear infinite;}
-@keyframes luktet {
-100% {opacity: 1;}
-50% {opacity: .5;}
-100% {opacity: 1;}
-}
 #kekno {
 	width:105px;
 	height:198px;
@@ -591,14 +575,6 @@ html {
 }
 /* AKTíV ELEMEK */
 /* 4-Családi szalon */
-/* apa + kalap*/
-#ferfi2 {
-	width:102px;
-	height:268px;
-	position:absolute;
-	top:413px;
-	left:952px
-}
 #kandallo {
 	width:62px;
 	height:62px;
@@ -715,73 +691,6 @@ html {
 	top:471px;
 	left:771px
 }
-/* AKTí­V ELEMEK */
-/* 8-Tanműhely */
-#borond1 {
-	width:60px;
-	height:60px;
-	position:absolute;
-	top:509px;
-	left:565px
-}
-#borond2 {
-	width:60px;
-	height:60px;
-	position:absolute;
-	top:614px;
-	left:942px
-}
-#konyvek2 {
-	width:60px;
-	height:60px;
-	position:absolute;
-	top:442px;
-	left:1038px
-}
-#festmeny {
-	width:54px;
-	height:73px;
-	position:absolute;
-	top:295px;
-	left:724px
-}
-#barnano {
-	width:196px;
-	height:378px;
-	position:absolute;
-	top:356px;
-	left:388px;
-}
-/* AKTí­V ELEMEK */
-/* Üzletek */
-#uzlet1 {
-	width:153px;
-	height:114px;
-	position:absolute;
-	top:139px;
-	left:371px
-}
-#uzlet2 {
-	width:103px;
-	height:119px;
-	position:absolute;
-	top:310px;
-	left:172px
-}
-#uzlet3 {
-	width:134px;
-	height:168px;
-	position:absolute;
-	top:264px;
-	left:274px
-}
-#uzlet4 {
-	width:125px;
-	height:119px;
-	position:absolute;
-	top:360px;
-	left:385px
-}
 
 .hiddenPic {
 	display:none
@@ -828,43 +737,4 @@ html {
 #infotext1 {
 	top:200px;
 	left:500px;
-}
-
-.ui-draggable, .ui-droppable {
-	background-position: top;
-}
-
-#dialog-message {
-	padding: 20px;
-    border: 2px solid #999;
-	border-radius: 8px;
-	box-shadow: 10px 10px 60px #555;
-    height: auto;
-    max-width: 585px;
-    min-height: 100px;
-    vertical-align: middle;
-    width: 60%;
-    display: none;
-	font-family:'Bahnschrift', serif;
-	font-size:18px;
-	font-weight:400;
-    background: rgba(125, 223, 236, 0.95);
-}
-/* jBox Tooltip */
-#jBox9, #jBox10 {
-	padding: 8px !important;
-	border: none;
-}
-#jBox9 .jBox-pointer-bottom:after {
-    box-shadow: 1px 1px 2px rgba(63, 39, 41, 0.0) !important;
-}
-#jBox9.jBox-Tooltip .jBox-container {
-    box-shadow: 0 0 3px rgba(241, 11, 30, 0.0) !important;
-}
-
-.uzletek-class {
-	position: relative;
-	width:900px;
-	height:630px;
-	background-image:url('../images/uzletek.jpg');
 }

@@ -1,0 +1,31 @@
+.konyak-container h1,h2 {
+    text-align: center;
+}
+.konyak-container h1 {
+    font-size: 2.2em;
+}
+.konyak-container h2 {
+    font-size: 1.6em;
+    font-weight: 100;
+}
+.konyak-container h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: rgb(249, 148, 0);
+}
+.konyak-container a {
+    color: rgb(249, 148, 0);
+}
+.konyak-container p {
+    text-align: left;
+    font-size: 1.5em;
+}
+.konyak-container iframe {
+    display: block;
+    margin: auto;
+}
+.konyak-container {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+
+}

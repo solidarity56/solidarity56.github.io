@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu_HU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>Üzletek</title>
+</head>
+
+<body>
+
+    <div class="uzletek-class">
+
+        <a href="#">
+            <img id="uzlet1" src="images/uzlet1_temp.png" width="153" height="114">
+            <script>
+                $(function () {
+                    $("#uzlet1").hover(function () {
+                        $(this).fadeOut(10, function () {
+                            $(this).attr("src", "images/uzlet1_fenyes.png");
+                            $(this).fadeIn(70);
+                        });
+                    }, function () {
+                        $(this).attr("src", "images/uzlet1_temp.png");
+                    }
+                    );
+                });
+            </script>
+        </a>
+
+        <a href="#">
+            <img id="uzlet2" src="images/uzlet2_temp.png" width="153" height="114">
+            <script>
+                $(function () {
+                    $("#uzlet2").hover(function () {
+                        $(this).fadeOut(10, function () {
+                            $(this).attr("src", "images/uzlet2_fenyes.png");
+                            $(this).fadeIn(70);
+                        });
+                    }, function () {
+                        $(this).attr("src", "images/uzlet2_temp.png");
+                    }
+                    );
+                });
+            </script>
+        </a>
+
+        <a href="#">
+            <img id="uzlet3" src="images/uzlet3_temp.png" width="134" height="168">
+            <script>
+                $(function () {
+                    $("#uzlet3").hover(function () {
+                        $(this).fadeOut(10, function () {
+                            $(this).attr("src", "images/uzlet3_fenyes.png");
+                            $(this).fadeIn(70);
+                        });
+                    }, function () {
+                        $(this).attr("src", "images/uzlet3_temp.png");
+                    }
+                    );
+                });
+            </script>
+        </a>
+
+        <a href="#">
+            <img id="uzlet4" src="images/uzlet4_temp.png" width="125" height="119">
+            <script>
+                $(function () {
+                    $("#uzlet4").hover(function () {
+                        $(this).fadeOut(10, function () {
+                            $(this).attr("src", "images/uzlet4_fenyes.png");
+                            $(this).fadeIn(70);
+                        });
+                    }, function () {
+                        $(this).attr("src", "images/uzlet4_temp.png");
+                    }
+                    );
+                });
+            </script>
+        </a>
+
+    </div>
+</body>
+
+</html>
