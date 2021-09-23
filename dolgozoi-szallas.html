@@ -46,8 +46,6 @@
 				style="cursor: pointer;"></div>
 			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
-			<div id="konyakosmeggy" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
 			<div id="info" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
 			<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
@@ -136,27 +134,5 @@
 		});
 	</script>
 
-	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
-	<script>
-		function popUpCal(url) {
-			//var url = "konyakosmeggy/7.pdf";
-			var width = 700;
-			var height = 600;
-			var left = parseInt((screen.availWidth / 2) - (width / 2));
-			var top = parseInt((screen.availHeight / 2) - (height / 2));
-			var windowFeatures = "width=" + width + ",height=" + height +
-				",status,resizable,left=" + left + ",top=" + top +
-				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
-
-			window.open(url, "subWind", windowFeatures, "POS");
-		}
-		//$$('konyakosmeggy').invoke('on', 'click', popUpCal();
-		$(document).ready(function () {
-			$('#konyakosmeggy').on('click', function (e) {
-				popUpCal("konyakosmeggy/konyakosmeggy8.html");
-			});
-		});
-	</script>
 </body>
-
 </html>
