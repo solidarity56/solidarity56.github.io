@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 	<meta property="og:title" content="Édes birodalom - Gerbeaud-ház">
 	<meta property="og:type" content="activity">
 	<meta property="og:url" content="index.html">
@@ -17,15 +16,12 @@
 	<meta property="og:site_name" content="#">
 	<meta property="og:description" content="Édes birodalom – történetek a Gerbeaud-házból">
 	<meta property="og:locale" content="hu_HU">
+	<script src="https:/ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 </head>
 
 <body>
-	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-	<script type="text/javascript" src="js/magnific-popup.js"></script>
-	<audio controls id="auto-hang">
-		<source src="sound/auto1.mp3" type="audio/mpeg">
-	</audio>
+	
 	<div id="container">
 
 		<div id="haz">
@@ -55,10 +51,10 @@
 				style="cursor: pointer;"></div>
 			<div id="title"></div>
 			<a id="nka" href="https://nka.hu" target="_blank"></a>
-			<div id="balnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='dolgozoi-szallas.html'"
-				style="cursor: pointer;"></div>
-			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszda.html'"
-				style="cursor: pointer;"></div>
+			<div id="balnyil" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='dolgozoi-szallas.html'" style="cursor: pointer;"></div>
+			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='cukraszda.html'" style="cursor: pointer;"></div>
 			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
 			<div id="video" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
@@ -239,10 +235,10 @@
 
 	</div>
 
-	<audio id="audioID" preload="auto" volume=".5">
+	<audio id="audioID" preload="auto">
 		<source src="sound/auto1.mp3"" type=" audio/mpeg">
 	</audio>
-	<audio id="audioID2" preload="auto" volume=".5">
+	<audio id="audioID2" preload="auto">
 		<source src="sound/auto2.mp3"" type=" audio/mpeg">
 	</audio>
 	<script src="js/audio.script.js"></script>
