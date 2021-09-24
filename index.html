@@ -263,9 +263,10 @@
 	<script>
 		function popUpAuto(url) {
 			var width = 900;
-			var height = 600;
+			var height = 630;
 			var left = parseInt((screen.availWidth / 2) - (width / 2));
 			var top = parseInt((screen.availHeight / 2) - (height / 2));
+			console.log(left,top);
 			var windowFeatures = "width=" + width + ",height=" + height +
 				",status,resizable,left=" + left + ",top=" + top +
 				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";

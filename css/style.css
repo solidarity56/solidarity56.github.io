@@ -759,7 +759,7 @@ html {
 	height:114px;
 	position:absolute;
 	top:139px;
-	left:371px
+	left:370px
 }
 #uzlet2 {
 	width:103px;
@@ -779,8 +779,22 @@ html {
 	width:125px;
 	height:119px;
 	position:absolute;
-	top:360px;
-	left:385px
+	top:359px;
+	left:384px
+}
+#uzlet5 {
+	width:133px;
+	height:168px;
+	position:absolute;
+	top:263px;
+	left:488px
+}
+#uzlet6 {
+	width:103px;
+	height:116px;
+	position:absolute;
+	top:310px;
+	left:621px
 }
 
 .hiddenPic {
@@ -866,5 +880,7 @@ html {
 	position: relative;
 	width:900px;
 	height:630px;
+	background-position: left top;
 	background-image:url('../images/uzletek.jpg');
+
 }
