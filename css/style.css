@@ -27,6 +27,9 @@ html {
 	min-height:920px; /* 830 */
 	background:#ffffff
 }
+#container-map {
+	position: relative;
+}
 #horizont{
 	width:100%;
 	height:800px; /* 1530 */
@@ -48,11 +51,25 @@ html {
 	background-image:url('../images/gerbeaud-haz.jpg');
 
 }
-#titles::after {
+#titles1 {
+	width:403px;
+	height:403px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#titles2 {
+	width:403px;
+	height:403px;
+	position:absolute;
+	top:0px;
+	left:500px;
+}
+/* #titles::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 #logo {
   float: left;
   margin-left: 305px;
@@ -599,19 +616,47 @@ html {
 	top:413px;
 	left:952px
 }
-#kandallo {
-	width:62px;
-	height:62px;
+#kandallodisz {
+	width:61px;
+	height:61px;
 	position:absolute;
 	top:308px;
-	left:789px
+	left:782px
+}
+#kandallotuz {
+	width:135px;
+	height:59px;
+	position:absolute;
+	top:411px;
+	left:746px
+}
+#asszony {
+	width:252px;
+	height:308px;
+	position:absolute;
+	top:342px;
+	left:446px
+}
+#g-emil {
+	width:282px;
+	height:313px;
+	position:absolute;
+	top:345px;
+	left:891px
+}
+#nagylany {
+	width:96px;
+	height:242px;
+	position:absolute;
+	top:293px;
+	left:908px
 }
 #szobor {
-	width:62px;
-	height:62px;
+	width:61px;
+	height:61px;
 	position:absolute;
-	top:263px;
-	left:1179px
+	top:262px;
+	left:1168px
 }
 #konyvek {
 	width:62px;
