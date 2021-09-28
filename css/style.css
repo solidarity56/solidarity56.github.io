@@ -639,11 +639,19 @@ html {
 	left:891px
 }
 #nagylany {
-	width:96px;
+	width:145px;
 	height:242px;
 	position:absolute;
 	top:293px;
 	left:908px
+}
+#bubbles {
+	width:400px;
+	height:142px;
+	position:absolute;
+	top:208px;
+	left:778px;
+	display:none
 }
 #ugralolany {
 	width:75px;

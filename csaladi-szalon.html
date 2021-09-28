@@ -67,32 +67,45 @@
 			<img id="kandallotuz" class="effect" src="images/kandallotuz_aktiv.png" width="135" height="59"
 				onmouseover="this.style.cursor='pointer';">
 
-			<img id="asszony" class="effect" src="images/asszony_aktiv.png" width="252" height="308"
-				onmouseover="this.style.cursor='pointer';">
+			<a href=""><img id="asszony" class="effect" src="images/asszony_aktiv.png" width="252" height="308"
+					onmouseover="this.style.cursor='pointer';"></a>
 
-			<img id="g-emil" class="effect" src="images/gemil_aktiv.png" width="282" height="313" usemap="#csaladiszalon1-map">
+			<img id="g-emil" class="effect" src="images/gemil_aktiv.png" width="282" height="313"
+				usemap="#csaladiszalon-map">
 
-			<img id="nagylany" class="effect" src="images/nagylany_aktiv.png" width="96" height="242">
+			<img id="bubbles" src="images/bubbles.png" width="282" height="313">
+
+			<a href="#">
+				<img id="nagylany" src="images/nagylany_aktiv2.png" width="145" height="242">
+				<script>
+					$("#nagylany").hover(function () {
+						var x = document.getElementById("bubbles");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
+					}, function () {
+						var x = document.getElementById("bubbles");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+							$("#bubbles").hide('slow');
+						} else {
+							x.style.display = "block";
+						}
+					});
+
+				</script>
+			</a>
 
 			<img id="ugralolany" src="images/ugralolany_aktiv.png" width="75" height="202">
 
-
-
 			<map name="csaladiszalon-map">
-				<!-- <area id="gyerekek" href="lanyok" alt="lanyok" coords="915,548,914,367,953,337,965,295,997,299,1052,411,1034,476"
-					shape="poly"> -->
-				<area href="gemil" alt="G.Emil"
-					coords="894,578,988,494,1043,492,1060,409,1077,348,1103,349,1115,398,1140,416,1169,409,1142,504,1140,644,1120,647,1031,654,958,652"
+				<area target="" alt="" title="" href="#"
+					coords="3,236,100,153,129,147,181,44,183,8,212,2,219,42,247,71,280,67,250,171,245,309,198,276,139,310,58,300"
 					shape="poly">
 			</map>
 
-
-
-			<!-- 			<div class="csalad1" id="szoveg3" onmouseover="this.style.cursor='pointer';"
-				title="Azt. A karamell csomagolást. “De szép sarkosra ám”. Ahogy anya mondja..."></div>
-			<div class="csalad2" id="szoveg8" onmouseover="this.style.cursor='pointer';"
-				title="Már várom a karácsonyt! Még a kötelező munkát sem bánom a műhelyben."></div> -->
-			<!-- </div> -->
 		</div>
 	</div>
 
@@ -156,6 +169,14 @@
 				$(this).removeClass('jsbTooltip');
 			}
 			);
+		});
+	</script>
+
+	<script>
+		new jBox('Tooltip', {
+			attach: '.tooltip2',
+			trigger: 'mouseenter',
+			width: 220
 		});
 	</script>
 
