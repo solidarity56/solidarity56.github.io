@@ -436,6 +436,25 @@
 
 	</div>
 
+	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
+	<script>
+		function popUpCal(url) {
+			var width = 700;
+			var height = 600;
+			var left = parseInt((screen.availWidth / 2) - (width / 2));
+			var top = parseInt((screen.availHeight / 2) - (height / 2));
+			var windowFeatures = "width=" + width + ",height=" + height +
+				",status,resizable,left=" + left + ",top=" + top +
+				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+			window.open(url, "subWind", windowFeatures, "POS");
+		}
+		$(document).ready(function () {
+			$('#konyakosmeggy').on('click', function (e) {
+				popUpCal("konyakosmeggy/-cukraszda.html");
+			});
+		});
+	</script>
+
 </body>
 
 
