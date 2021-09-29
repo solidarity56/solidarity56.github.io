@@ -503,12 +503,20 @@ html {
 }
 /* AKTí­V ELEMEK */
 /* 2-Cukrászműhely */
-#muhelylampak {
-	width:204px;
-	height:116px;
+#szurkefickok {
+	width:285px;
+	height:96px;
 	position:absolute;
-	top:258px;
-	left:787px
+	top:364px;
+	left:714px;
+}
+#bubi-2 {
+	width:493px;
+	height:163px;
+	position:absolute;
+	top:281px;
+	left:613px;
+	display:none;
 }
 #uvegek {
 	width:82px;
@@ -517,9 +525,16 @@ html {
 	top:433px;
 	left:736px
 }
-#ananasz {
-	width:62px;
+#cetlik {
+	width:61px;
 	height:62px;
+	position:absolute;
+	top:380px;
+	left:493px
+}
+#ananasz {
+	width:61px;
+	height:61px;
 	position:absolute;
 	top:499px;
 	left:643px

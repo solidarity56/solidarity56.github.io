@@ -7,17 +7,28 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">>
-	<link rel="stylesheet" href="css/bubble.css" type="text/css">
-	<link rel="stylesheet" href="css/dark.css" type="text/css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-	<script src="js/jbox.all.min.js"></script>
-	<script type="text/javascript" src="js/buborek.js"></script>
 	<div id="container">
 		<div id="gerbeaud-cukraszmuhely">
-			<div id="titles">
+			<div class="popupText" id="infotext1"><strong>Gerbeaud-ház</strong><br><br>
+				Üdvözöljük látogatóinkat a Gerbeaud Cukrászdánál, ami a 19. század óta ékesíti a budapesti
+				Vörösmarty teret. A napjainkban látható négyemeletes, belső udvarokkal tagolt, szecessziós-késő
+				eklektikus épület magán hordozza egykori híres tulajdonosának, Gerbeaud Emilnek (1854-1919) a
+				kézjegyét, aki 1884-ben érkezett Magyarországra, hogy átvegye Kugler Henrik (1930-1905)
+				cukrászüzletét. Gerbeaud élete végéig azon fáradozott, hogy bővítse és fejlessze vállalkozását.<br><br>
+				A Gerbeaud-ház épületegyüttesében nem csak a cukrászda és a cukrászműhely került kialakításra: az
+				első emeleten a Gerbeaud család lakhelye és a cég központi irodája volt, a másodikon csomagoló
+				működött, a harmadikon tanműhely, a negyediken pedig dolgozói lakások voltak.<br><br>
+				Egykor országszerte számos Gerbeaud üzletbe, gyárba, céges ingatlanba és hirdetésekbe botlottunk
+				volna, mára ez az egy épület maradt fenn abból az ,,Édes Birodalom”-ból, amit a híres cukrász a
+				családjával hosszú évtizedek alatt épített fel. Tartson velünk és ismerje meg az egyik leghíresebb
+				magyarországi cukrász történetét!
+				<div class="popupCloseButton">&times;</div>
+			</div>
+			<div>
 				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
 				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
 			</div>
@@ -31,118 +42,70 @@
 				style="cursor: pointer;"></div>
 			<div id="balnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszda.html'"
 				style="cursor: pointer;"></div>
-			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='csaladi-szalon.html'"
-				style="cursor: pointer;"></div>
+			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='csaladi-szalon.html'" style="cursor: pointer;"></div>
 			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
-			<div id="konyakosmeggy" title="tanulás" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
-			<div id="info" title="történetek" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
+			<div id="konyakosmeggy" title="tanulás" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='#'" style="cursor: pointer;"></div>
+			<div id="info" title="történetek" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='#'" style="cursor: pointer;"></div>
+
+			<img id="bubi-2" src="images/szurkefickok_bubi.png" width="493" height="163">
 
 			<a href="#">
-				<img id="muhelylampak" src="images/muhelylampak_alap.png" width="204" height="116">
+				<img id="szurkefickok" class="effect" src="images/szurkefickok_aktiv.png" width="285" height="96">
 				<script>
-					$(function () {
-						$("#muhelylampak").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/muhelylampak_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/muhelylampak_alap.png");
+					$("#szurkefickok").hover(function () {
+						var x = document.getElementById("bubi-2");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
 						}
-						);
+					}, function () {
+						var x = document.getElementById("bubi-2");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
 					});
+
 				</script>
 			</a>
 
-			<a href="#">
-				<img id="uvegek" src="images/uvegek_alap.png" width="82" height="83">
-				<script>
-					$(function () {
-						$("#uvegek").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/uvegek_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/uvegek_alap.png");
-						}
-						);
-					});
-				</script>
-			</a>
+			<img id="uvegek" src="images/uvegek_aktiv.png" width="81" height="83"
+				onmouseover="this.style.cursor='pointer';">
 
-			<a href="#">
-				<img id="ananasz" src="images/ananasz_alap.png" width="62" height="62">
-				<script>
-					$(function () {
-						$("#ananasz").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/ananasz_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/ananasz_alap.png");
-						}
-						);
-					});
-				</script>
-			</a>
+			<img id="cetlik" src="images/cetlik_aktiv.png" width="61" height="62"
+				onmouseover="this.style.cursor='pointer';">
 
-			<a href="#">
-				<img id="gyumolcs" src="images/gyumolcs_alap.png" width="62" height="62">
-				<script>
-					$(function () {
-						$("#gyumolcs").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/gyumolcs_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/gyumolcs_alap.png");
-						}
-						);
-					});
-				</script>
-			</a>
+			<img id="ananasz" src="images/ananasz_aktiv.png" width="61" height="61"
+				onmouseover="this.style.cursor='pointer';">
 
-			<a href="#">
-				<img id="torta" src="images/torta_alap.png" width="62" height="62">
-				<script>
-					$(function () {
-						$("#torta").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/torta_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/torta_alap.png");
-						}
-						);
-					});
-				</script>
-			</a>
+			<img id="gyumolcs" src="images/gyumolcs_aktiv.png" width="61" height="61"
+				onmouseover="this.style.cursor='pointer';">
 
-			<div class="cukrasz1" id="szoveg1" onmouseover="this.style.cursor='pointer';"
-				title="Mindent aznap...Nem értem, miért nem lehet egy nappal előre csinálni, akkor nem  úsznánk el soha a mennyiséggel.">
-			</div>
-			<div class="cukrasz2" id="szoveg2" onmouseover="this.style.cursor='pointer';"
-				title="Kuss, és örülj, hogy nyugalom van. A főnök minden nap frisset akar. Az én mignonjaimat tegnap szétverte, mert túl halványak voltak.">
-			</div>
-			<div class="cukrasz3" id="szoveg3" onmouseover="this.style.cursor='pointer';"
-				title="Azt hallottátok, hogy a Jani meg a Gyuri fél évet kapott a sütemény lopásért?"></div>
-			<div class="cukrasz4" id="szoveg4" onmouseover="this.style.cursor='pointer';"
-				title="Aha. Állítólag a kukába rejtették csomagolva, az asszonyok meg eladták a piacon."></div>
-			<div class="cukrasz5" id="szoveg5" onmouseover="this.style.cursor='pointer';"
-				title="Ilyen fizetés mellett csodálod?"></div>
-
-			<div class="cukrasz6" id="szoveg9" onmouseover="this.style.cursor='pointer';"
-				title="Kár, hogy nem nekem jutott eszembe..." content="TESZT"></div>
+			<img id="torta" src="images/torta_aktiv.png" width="61" height="61"
+				onmouseover="this.style.cursor='pointer';">
 
 		</div>
 	</div>
+
+	<!-- INFO BUTTON SCRIPT  -->
+	<script>
+		$(document).ready(function () {
+			$('#info').on('click', function (e) {
+				$('.popupText').fadeIn(90);
+			});
+		});
+		$(document).ready(function () {
+			$('.popupCloseButton').on('click', function (e) {
+				$('.popupText').fadeOut(90);
+			});
+		});
+	</script>
 
 	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
 	<script>
