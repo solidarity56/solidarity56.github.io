@@ -445,11 +445,19 @@ html {
 	left:655px
 }
 #cukraszda {
-	width:725px;
-	height:97px;
+	width:962px;
+	height:98px;
 	position:absolute;
 	top:552px;
-	left:351px
+	left:352px
+}
+#cimer {
+	width:42px;
+	height:41px;
+	position:absolute;
+	top:561px;
+	left:1141px;
+	z-index: 1;
 }
 #kirakat {
 	width:173px;
