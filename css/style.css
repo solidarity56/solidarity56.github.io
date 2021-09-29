@@ -27,13 +27,6 @@ html {
 	min-height:920px;
 	background:#ffffff
 }
-#container-map {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-left: -790px;
-    margin-top: -450px;
-}
 #haz {
 	width:1580px;
 	height:866px;
@@ -45,25 +38,6 @@ html {
 	background-image:url('../images/gerbeaud-haz.jpg');
 
 }
-#titles1 {
-	width:403px;
-	height:403px;
-	position:absolute;
-	top:0px;
-	left:0px;
-}
-#titles2 {
-	width:403px;
-	height:403px;
-	position:absolute;
-	top:0px;
-	left:500px;
-}
-/* #titles::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
 #logo {
   float: left;
   margin-left: 305px;
@@ -645,7 +619,7 @@ html {
 	top:293px;
 	left:908px
 }
-#bubbles {
+#bubi-1 {
 	width:400px;
 	height:142px;
 	position:absolute;
@@ -938,3 +912,4 @@ html {
 	background-image:url('../images/uzletek.jpg');
 
 }
+

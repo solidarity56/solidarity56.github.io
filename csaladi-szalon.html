@@ -7,17 +7,12 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/bubble.css" type="text/css">
-	<link rel="stylesheet" href="css/dark.css" type="text/css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-	<script src="js/jbox.all.min.js"></script>
-	<script type="text/javascript" src="js/buborek.js"></script>
 	<div id="container">
-		<div id="container-map">
-			<img src="./images/csaladiszalon_alap2.jpg" width="1580" height="866" usemap="#csaladiszalon-map">
+		<div id="gerbeaud-csaladiszalon">
 			<div class="popupText" id="infotext1"><strong>Gerbeaud-ház</strong><br><br>
 				Üdvözöljük látogatóinkat a Gerbeaud Cukrászdánál, ami a 19. század óta ékesíti a budapesti
 				Vörösmarty teret. A napjainkban látható négyemeletes, belső udvarokkal tagolt, szecessziós-késő
@@ -33,11 +28,9 @@
 				magyarországi cukrász történetét!
 				<div class="popupCloseButton">&times;</div>
 			</div>
-			<div id="titles1">
-				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
-			</div>
-			<div id="titles2">
-				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
+			<div>
+				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png" /></a>
+				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png" /></a>
 			</div>
 			<div id="title-csaladi-szalon"></div>
 			<div id="nka" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='https://www.nka.hu'"
@@ -71,25 +64,24 @@
 					onmouseover="this.style.cursor='pointer';"></a>
 
 			<img id="g-emil" class="effect" src="images/gemil_aktiv.png" width="282" height="313"
-				usemap="#csaladiszalon-map">
+				usemap="#gemil-map">
 
-			<img id="bubbles" src="images/bubbles.png" width="282" height="313">
+			<img id="bubi-1" src="images/nagylany_bubi.png" width="282" height="313">
 
 			<a href="#">
-				<img id="nagylany" src="images/nagylany_aktiv2.png" width="145" height="242">
+				<img id="nagylany" src="images/nagylany_aktiv.png" width="145" height="242">
 				<script>
 					$("#nagylany").hover(function () {
-						var x = document.getElementById("bubbles");
+						var x = document.getElementById("bubi-1");
 						if (x.style.display === "block") {
 							x.style.display = "none";
 						} else {
 							x.style.display = "block";
 						}
 					}, function () {
-						var x = document.getElementById("bubbles");
+						var x = document.getElementById("bubi-1");
 						if (x.style.display === "block") {
 							x.style.display = "none";
-							$("#bubbles").hide('slow');
 						} else {
 							x.style.display = "block";
 						}
@@ -98,13 +90,13 @@
 				</script>
 			</a>
 
-			<img id="ugralolany" src="images/ugralolany_aktiv.png" width="75" height="202">
-
-			<map name="csaladiszalon-map">
+			<map name="gemil-map">
 				<area target="" alt="" title="" href="#"
 					coords="3,236,100,153,129,147,181,44,183,8,212,2,219,42,247,71,280,67,250,171,245,309,198,276,139,310,58,300"
 					shape="poly">
 			</map>
+
+			<img id="ugralolany" src="images/ugralolany_aktiv.png" width="75" height="202">
 
 		</div>
 	</div>
@@ -141,42 +133,6 @@
 			$('#konyakosmeggy').on('click', function (e) {
 				popUpCal("konyakosmeggy/konyakosmeggy2.html");
 			});
-		});
-	</script>
-
-	<!-- KÉT LÁNY SZÖVEG SCRIPT  -->
-	<script>
-		$(function () {
-			$("#gyerekek").hover(function () {
-				$(this).fadeOut(10, function () {
-					$(this).attr("src", "images/barnano_fenyes.png");
-					$(this).fadeIn(70);
-					$(this).addClass('jsbTooltip');
-					$(this).attr('title', '...oklevél, blúz, hálóing, templomba való szoknya. Minden bepakolva. Azért kicsit szomorú itthagyni a Gerbeaud-ot.');
-					$('.jsbTooltip').jBox('Tooltip', {
-						attach: '.tooltip',
-						trigger: 'mouseenter',
-						position: {
-							x: 'center',
-							y: 'top'
-						},
-						offset: { x: 30 },
-						width: 200
-					});
-				});
-			}, function () {
-				$(this).attr("src", "images/barnano_alap.png");
-				$(this).removeClass('jsbTooltip');
-			}
-			);
-		});
-	</script>
-
-	<script>
-		new jBox('Tooltip', {
-			attach: '.tooltip2',
-			trigger: 'mouseenter',
-			width: 220
 		});
 	</script>
 
