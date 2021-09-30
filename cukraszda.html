@@ -44,14 +44,60 @@
 
 			<a href=""><img id="cukidoboz" src="images/cukidoboz_aktiv.png" width="62" height="62"></a>
 
+			<img id="bubi-5" src="images/kekno_bubi.png" width="453" height="304">
+			<a href="#">
+				<img id="kekno" class="effect" src="images/kekno_aktiv.png" width="260" height="244">
+				<script>
+					$("#kekno").hover(function () {
+						var x = document.getElementById("bubi-5");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
+					}, function () {
+						var x = document.getElementById("bubi-5");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
+					});
+					</script>
+			</a>
+
+			<img id="bubi-4" src="images/lilano_bubi.png" width="490" height="124">
+			<a href="#">
+				<img id="lilano" class="effect" src="images/lilano_aktiv.png" width="386" height="246">
+				<script>
+					$("#lilano").hover(function () {
+						var x = document.getElementById("bubi-4");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
+					}, function () {
+						var x = document.getElementById("bubi-4");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
+					});
+				</script>
+			</a>
+
+
+
 			<a href="#">
 				<img id="ferfi2" src="images/apa_kalap-fent.gif" width="102" height="268" />
 				<script>
 					$(function () {
 						$("#ferfi2").hover(function () {
-							$(this).fadeOut(10, function () {
+							// $(this).fadeOut(10, function () {
 								$(this).attr("src", "images/apa_kalap-lent.gif");
-								$(this).fadeIn(70);
+/* 								$(this).fadeIn(70);
 								$(this).addClass('jsbTooltip');
 								$(this).attr('title', 'Elhozom a Gerbeaudba, de még ilyenkor se hagy békét… na szép.');
 								$('.jsbTooltip').jBox('Tooltip', {
@@ -64,60 +110,16 @@
 									//offset: {x: 30},
 									width: 102
 								});
-							});
+ */							});
 						}, function () {
 							$(this).attr("src", "images/apa_kalap-fent.gif");
-							$(this).removeClass('jsbTooltip');
-						}
-						);
+							// $(this).removeClass('jsbTooltip');
 					});
 				</script>
 			</a>
 
-			<img id="kekno" class="effect" src="images/kekno_aktiv.png" width="105" height="198">
-
-			<img id="lilano" class="effect" src="images/lilano_aktiv.png" width="134" height="243">
-
-<!-- 			<img id="bubi-3" src="images/vasarlok_bubi.png" width="282" height="313">
-			<a href="#">
-				<img id="vasarlok" src="images/vasarlok_aktiv.png" width="145" height="242">
-				<script>
-					$("#vasarlok").hover(function () {
-						var x = document.getElementById("bubi-1");
-						if (x.style.display === "block") {
-							x.style.display = "none";
-						} else {
-							x.style.display = "block";
-						}
-					}, function () {
-						var x = document.getElementById("bubi-1");
-						if (x.style.display === "block") {
-							x.style.display = "none";
-						} else {
-							x.style.display = "block";
-						}
-					});
-
-				</script>
-			</a> -->
 
 			<a href=""><img id="cukikave" src="images/cukikave_aktiv.png" width="62" height="62"></a>
-
-			<div class="vasarlo1" id="szoveg1" onmouseover="this.style.cursor='pointer';"
-				title="Szörnyen drága ez a hely."></div>
-			<div class="vasarlo2" id="szoveg6" onmouseover="this.style.cursor='pointer';"
-				title="Az. Ha rendelsz egy kávét, két süteményt, egy konyakot, és fizetés nélkül távozol, Gerbeaud még azon is nyer.">
-			</div>
-			<div class="ferfi1" id="szoveg9" onmouseover="this.style.cursor='pointer';"
-				title="Minek hozta a barátnéját a randevúnkra? Dupla költség, fele öröm..."></div>
-			<div class="holgy" id="szoveg4" onmouseover="this.style.cursor='pointer';"
-				title="Azt meséltem, hogy múltkor beült ide néhány iparos legény is?"></div>
-			<!-- 			<div class="ferfi2" id="szoveg9" onmouseover="this.style.cursor='pointer';"
-				title="Elhozom a Gerbeaudba, de még ilyenkor se hagy békét… na szép."></div> -->
-			<div class="kislany" id="szoveg2" onmouseover="this.style.cursor='pointer';"
-				title="De jó, megjött édesapa! Féltem, hogy megint csak ígéri..."></div>
-		</div>
-	</div>
 
 	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
 	<script>

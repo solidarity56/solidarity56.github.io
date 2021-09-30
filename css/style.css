@@ -584,18 +584,34 @@ html {
 	left:1147px
 }
 #kekno {
-	width:105px;
-	height:198px;
+	width:260px;
+	height:244px;
 	position:absolute;
-	top:455px;
-	left:1112px
+	top:420px;
+	left:959px;
+}
+#bubi-5 {
+	width:453px;
+	height:304px;
+	position:absolute;
+	top:339px;
+	left:898px;
+	display:none;
 }
 #lilano {
-	width:134px;
-	height:243px;
+	width:386px;
+	height:246px;
 	position:absolute;
-	top:487px;
-	left:728px
+	top:485px;
+	left:472px
+}
+#bubi-4 {
+	width:490px;
+	height:124px;
+	position:absolute;
+	top:389px;
+	left:396px;
+	display:none;
 }
 #vasarlok {
 	width:47px;
