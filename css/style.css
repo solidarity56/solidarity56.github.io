@@ -754,6 +754,28 @@ html {
 	top:356px;
 	left:691px
 }
+#papirkupac {
+	width:142px;
+	height:67px;
+	position:absolute;
+	top:545px;
+	left:796px
+}
+#csomagolo {
+	width:241px;
+	height:386px;
+	position:absolute;
+	top:362px;
+	left:925px
+}
+#bubi-6 {
+	width:304px;
+	height:163px;
+	position:absolute;
+	top:198px;
+	left:822px;
+	display:none;
+}
 /* AKTí­V ELEMEK */
 /* 7-Tanműhely */
 #asztal {
