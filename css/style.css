@@ -658,8 +658,8 @@ html {
 	display:none
 }
 #ugralolany {
-	width:75px;
-	height:202px;
+	width:76px;
+	height:203px;
 	position:absolute;
 	top:410px;
 	left:702px
@@ -945,11 +945,6 @@ html {
 
 }
 
-.stage {
-	display: flex;
-	height: 330px;
-	width: 100%;
-}
 .girl {
 	align-self: flex-end;
 	animation-duration: 2s;
