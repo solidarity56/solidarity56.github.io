@@ -117,7 +117,7 @@
 
 			<img id="kirakat" src="images/kirakat_alap.png" width="173" height="144">
 
-			<img id="cukraszda" src="images/cukraszda_alap.png" width="962" height="98" usemap="#cukraszda-map">			
+			<img id="cukraszda" src="images/cukraszda_alap.png" width="962" height="98" usemap="#cukraszda-map">
 
 			<map name="cukraszda-map">
 				<area target="" alt="" title="" href="" onmouseenter="elemOn('kirakat')"
@@ -262,6 +262,24 @@
 			});
 		});
 	</script>
+	<!-- MAP BUTTON SCRIPT  -->
+	<script>
+		function popUpCal(url) {
+			var width = 700;
+			var height = 600;
+			var left = parseInt((screen.availWidth / 2) - (width / 2));
+			var top = parseInt((screen.availHeight / 2) - (height / 2));
+			var windowFeatures = "width=" + width + ",height=" + height +
+				",status,resizable,left=" + left + ",top=" + top +
+				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+			window.open(url, "subWind", windowFeatures, "POS");
+		}
+		$(document).ready(function () {
+			$('#nyilak').on('click', function (e) {
+				popUpCal("https://itsource.us/gerbeaud/terkep");
+			});
+		});
+	</script>
 	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
 	<script>
 		function popUpCal(url) {
@@ -277,6 +295,24 @@
 		$(document).ready(function () {
 			$('#konyakosmeggy').on('click', function (e) {
 				popUpCal("konyakosmeggy/konyakosmeggy1.html");
+			});
+		});
+	</script>
+	<!-- VIDEO BUTTON SCRIPT  -->
+	<script>
+		function popUpCal(url) {
+			var width = 980;
+			var height = 480;
+			var left = parseInt((screen.availWidth / 2) - (width / 2));
+			var top = parseInt((screen.availHeight / 2) - (height / 2));
+			var windowFeatures = "width=" + width + ",height=" + height +
+				",status,resizable,left=" + left + ",top=" + top +
+				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+			window.open(url, "subWind", windowFeatures, "POS");
+		}
+		$(document).ready(function () {
+			$('#video').on('click', function (e) {
+				popUpCal("https://itsource.us/gerbeaud/videos");
 			});
 		});
 	</script>

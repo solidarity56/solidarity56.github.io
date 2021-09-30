@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>videólejátszó</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<div class="container">
+<div class="vidcontainer">
+<video id="myvid" >
+
+  Your browser does not support the video tag.
+  
+</video>
+
+        <div class="topControl">
+			<div class="progress">
+				<span class="bufferBar"></span>
+				<span class="timeBar"></span>
+			</div>
+			<div class="time">
+				<span class="current"></span> / 
+				<span class="duration"></span> 
+			</div>
+        </div>
+
+<div class="controllers">
+  	<button class="btnPlay" title="Play/Pause video"></button>
+  	<button class="prevvid disabled" title="Previous video"><i class="fa fa-step-forward fa-rotate-180"></i></button>
+    <button class="nextvid" title="Next video"><i class="fa fa-step-forward"></i></button>
+    <button class="sound sound2 btn" title="Mute/Unmute sound"></button>
+    <div class="volume" title="Set volume">
+			<span class="volumeBar"></span>
+	</div>
+    <button class="btnFS " style="float:right" title="full screen"></button>
+    <button class="btnspeed " style="float:right" title="Video speed"><i class="fa fa-gear"></i></button>
+    <ul class="speedcnt">
+    	<li class="spdx50">1.5</li>
+    	<li class="spdx25">1.25</li>
+    	<li class="spdx1 selected">Normal</li>
+    	<li class="spdx050">0.5</li>
+    </ul>
+	<button class="btnLight lighton " style="float:right" title="on/off light"><i class="fa fa-adjust"></i></button>
+</div>
+<div class="ads">
+    	<span class="closeme fa fa-close"></span>
+
+</div>
+<div class="bigplay" title="play the video"><i class="fa fa-play-circle-o"></i></div>
+<div class="loading"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+
+	<div class="videolist">
+		<nav class="vids">
+<a class="link" href="https://itsource.us/gerbeaud/videos/001_molnargy_az_epulet_final_2k_1080p.mp4">Épület története</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/002_molnargy_gerbeaud_uzem_final_2k_1080p.mp4">Épület felépítése</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/003_molnargy_a_gerbeaud_berendezese_final_2k_1080p.mp4">Cukrászda berendezése ma</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/004_molnargy_a_gerbeaud_lakoter_final_2k_1080p.mp4">Gerbeaud lakás berendezése</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/005_molnargy_a_gerbeaud_emlil_dolgozoszobaja_final_2k_1080p.mp4">Gerbeaud irodája</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/006_molnargy_a_gerbeaud_jelleme_2k_1080p.mp4">Gerbeaud jelleme</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/007_molnargy_a_gerbeaud_klasszikusok_2k_1080p.mp4">Zserbó süti</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/008_molnargy_gerbeaud_alkalmazottak_2k_1080p.mp4">Alkalmazottak segítése</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/009_niszkacsa_kugler_2k_1080p.mp4">Kugler sztori</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/010_niszkacsa_a_gerbeaud_kugler_brand_2k_1080p.mp4">Gerbeaud brand</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/011_niszkacsa_a_modern_gerbeaud_2k_1080p.mp4">A modern Gerbeaud</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/012_niszkacsa_uj_sutemenyek_2k_1080p.mp4">Új sütemények</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/013_niszkacsa_csomgolasok_2k_1080p.mp4">Cukrászda berendezése és sütik és csomagolás</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/014_niszkacsa_a_gerbeaud_kozonsege_2k_1080p.mp4">Gerbeaud közönsége ma</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/015_niszkacsa_hiressegek_2k_1080p.mp4">Hírességek a Gerbeaudban</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/016_niszkacsa_anekdotak_2k_1080p.mp4">Felszolgáló lányok</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/017_niszkacsa_egy_kulonos_urbanus_legenda_2k_1080p.mp4">Legenda :) Fiúk és idős hölgyek</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/018_szilagyia_a_cukraszat_technologiaja_2k_1080p.mp4">Technológia</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/019_szilagyia_parizsi_cukrasz_budapesten_2k_1080p.mp4">Kugler sztori</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/020_szilagyia_a_cukraszat_eredete_2k_1080p.mp4">Cukrászda eredete</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/021_szilagyia_kik_jartak_cukraszdaba_2k_1080p.mp4">Ki járt ide</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/022_szilagyia_a_gerbeaud_terjeszkedese_2k_1080p.mp4">híres vendég</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/023_szilagyia_fogyasztasi_szokasok_2k_1080p.mp4">Fogyasztás - elvitel</a>
+<a class="link" href="https://itsource.us/gerbeaud/videos/024_szilagyia_csaladi_kapitalizmus_2k_1080p.mp4">Családi kapitalizmus</a>
+
+		</nav>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
