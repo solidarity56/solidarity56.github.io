@@ -1,348 +1,104 @@
 ﻿<!DOCTYPE HTML>
-
 <html lang="hu_HU">
 
-
-
 <head>
-
 	<title>Édes birodalom - Tanműhely</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
-
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-
 	<link rel="stylesheet" href="css/bubble.css" type="text/css">
-
 	<link rel="stylesheet" href="css/dark.css" type="text/css">
-
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 
-
-
 <body>
-
 	<script src="js/jbox.all.min.js"></script>
-
 	<script type="text/javascript" src="js/buborek.js"></script>
-
 	<div id="container">
-
 		<div id="gerbeaud-tanmuhely">
-
 			<div class="popupText" id="infotext1"><strong>Gerbeaud-ház</strong><br><br>
-
 				Üdvözöljük látogatóinkat a Gerbeaud Cukrászdánál, ami a 19. század óta ékesíti a budapesti
-
 				Vörösmarty teret. A napjainkban látható négyemeletes, belső udvarokkal tagolt, szecessziós-késő
-
 				eklektikus épület magán hordozza egykori híres tulajdonosának, Gerbeaud Emilnek (1854-1919) a
-
 				kézjegyét, aki 1884-ben érkezett Magyarországra, hogy átvegye Kugler Henrik (1930-1905)
-
 				cukrászüzletét. Gerbeaud élete végéig azon fáradozott, hogy bővítse és fejlessze vállalkozását.<br><br>
-
 				A Gerbeaud-ház épületegyüttesében nem csak a cukrászda és a cukrászműhely került kialakításra: az
-
 				első emeleten a Gerbeaud család lakhelye és a cég központi irodája volt, a másodikon csomagoló
-
 				működött, a harmadikon tanműhely, a negyediken pedig dolgozói lakások voltak.<br><br>
-
 				Egykor országszerte számos Gerbeaud üzletbe, gyárba, céges ingatlanba és hirdetésekbe botlottunk
-
 				volna, mára ez az egy épület maradt fenn abból az ,,Édes Birodalom”-ból, amit a híres cukrász a
-
 				családjával hosszú évtizedek alatt épített fel. Tartson velünk és ismerje meg az egyik leghíresebb
-
 				magyarországi cukrász történetét!
-
 				<div class="popupCloseButton">&times;</div>
-
 			</div>
-
 			<div id="titles">
-
 				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
-
 				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
-
 			</div>
-
-
-
 			<div id="title-tanmuhely"></div>
-
 			<div id="nka" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='https://www.nka.hu'"
 				style="cursor: pointer;"></div>
-
-			<div id="balnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='csomagolo-muhely.html'"
-				style="cursor: pointer;"></div>
-
-			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='dolgozoi-szallas.html'"
-				style="cursor: pointer;"></div>
-
+			<div id="balnyil" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='csomagolo-muhely.html'" style="cursor: pointer;"></div>
+			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='dolgozoi-szallas.html'" style="cursor: pointer;"></div>
 			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
-
-			<div id="konyakosmeggy" title="tanulás" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
-
-			<div id="info" title="történetek" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
-
-
-
-
-
+			<div id="konyakosmeggy" title="tanulás" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='#'" style="cursor: pointer;"></div>
+			<div id="info" title="történetek" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='#'" style="cursor: pointer;"></div>
 			<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
-
 			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszmuhely.html'"
 				style="cursor: pointer;"></div>
 
-
-
+			<img id="bubi-3" src="images/tancukrasz_bubi.png" width="720" height="159">
 			<a href="#">
-
-				<img id="tancukrasz1" src="images/tancukrasz_alap.png" width="155" height="209" />
-
+				<img id="tancukrasz" class="effect" src="images/tancukrasz_aktiv.png" width="466" height="235">
 				<script>
-
-					$(function () {
-
-						$("#tancukrasz1").hover(function () {
-
-							$(this).fadeOut(10, function () {
-
-								$(this).attr("src", "images/tancukrasz_fenyes.png");
-
-								$(this).fadeIn(70);
-
-								$(this).addClass('jsbTooltip');
-
-								$(this).attr('title', 'Utoljára mondom: F-I-N-O-M-A-N nyomja');
-
-								$('.jsbTooltip').jBox('Tooltip', {
-
-									attach: '.tooltip',
-
-									trigger: 'mouseenter',
-
-									position: {
-
-										x: 'center',
-
-										y: 'top'
-
-									},
-
-									width: 140
-
-								});
-
-							});
-
-						}, function () {
-
-							$(this).attr("src", "images/tancukrasz_alap.png");
-
+					$("#tancukrasz").hover(function () {
+						var x = document.getElementById("bubi-3");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
 						}
-
-						);
-
+					}, function () {
+						var x = document.getElementById("bubi-3");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
 					});
-
 				</script>
-
 			</a>
 
+			<a href=""><img id="asztal" class="effect" src="images/asztal_aktiv.png" width="721" height="226"></a>
 
+			<a href=""><img id="tyuktal" src="images/tyuktal_aktiv.png" width="60" height="60"></a>
 
-			<a href="#">
+			<a href=""><img id="habnyomo" src="images/habnyomo_aktiv.png" width="60" height="60"></a>
 
-				<img id="asztal" src="images/asztal_alap.png" width="705" height="243">
-
-				<script>
-
-					$(function () {
-
-						$("#asztal").hover(function () {
-
-							$(this).fadeOut(10, function () {
-
-								$(this).attr("src", "images/asztal_fenyes.png");
-
-								$(this).fadeIn(70);
-
-							});
-
-						}, function () {
-
-							$(this).attr("src", "images/asztal_alap.png");
-
-						}
-
-						);
-
-					});
-
-				</script>
-
-			</a>
-
-
-
-			<a href="#">
-
-				<img id="tyuktal" src="images/tyuktal_alap.png" width="60" height="60">
-
-				<script>
-
-					$(function () {
-
-						$("#tyuktal").hover(function () {
-
-							$(this).fadeOut(10, function () {
-
-								$(this).attr("src", "images/tyuktal_fenyes.png");
-
-								$(this).fadeIn(70);
-
-							});
-
-						}, function () {
-
-							$(this).attr("src", "images/tyuktal_alap.png");
-
-						}
-
-						);
-
-					});
-
-				</script>
-
-			</a>
-
-
-
-			<a href="#">
-
-				<img id="habnyomo" src="images/habnyomo_alap.png" width="60" height="60">
-
-				<script>
-
-					$(function () {
-
-						$("#habnyomo").hover(function () {
-
-							$(this).fadeOut(10, function () {
-
-								$(this).attr("src", "images/habnyomo_fenyes.png");
-
-								$(this).fadeIn(70);
-
-							});
-
-						}, function () {
-
-							$(this).attr("src", "images/habnyomo_alap.png");
-
-						}
-
-						);
-
-					});
-
-				</script>
-
-			</a>
-
-
-
-			<a href="#">
-
-				<img id="keverotal" src="images/keverotal_alap.png" width="60" height="60">
-
-				<script>
-
-					$(function () {
-
-						$("#keverotal").hover(function () {
-
-							$(this).fadeOut(10, function () {
-
-								$(this).attr("src", "images/keverotal_fenyes.png");
-
-								$(this).fadeIn(70);
-
-							});
-
-						}, function () {
-
-							$(this).attr("src", "images/keverotal_alap.png");
-
-						}
-
-						);
-
-					});
-
-				</script>
-
-			</a>
-
-
-
-			<div class="tancukrasz2" id="szoveg3" onmouseover="this.style.cursor='pointer';"
-				title="Éretm én. Nem hülye vagyok, csak nem sikerült."></div>
-
-			<div class="tancukrasz3" id="szoveg4" onmouseover="this.style.cursor='pointer';"
-				title="Bezzeg velem nem volt ilyen türelmes inas koromban.">
-
-			</div>
-
-			<div class="tancukrasz4" id="szoveg5" onmouseover="this.style.cursor='pointer';"
-				title="Bár csak ellógtam volna a vurstliba ehelyett.">
-
-			</div>
+			<a href=""><img id="keverotal" src="images/keverotal_aktiv.png" width="60" height="60"></a>
 
 		</div>
-
 	</div>
-
 	<!-- INFO BUTTON SCRIPT  -->
-
 	<script>
-
 		$(document).ready(function () {
-
 			$('#info').on('click', function (e) {
-
 				$('.popupText').fadeIn(90);
-
 			});
-
 		});
-
 		$(document).ready(function () {
-
 			$('.popupCloseButton').on('click', function (e) {
-
 				$('.popupText').fadeOut(90);
-
 			});
-
 		});
-
 	</script>
-
 	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
 	<script>
 		function popUpCal(url) {
@@ -354,7 +110,6 @@
 			var windowFeatures = "width=" + width + ",height=" + height +
 				",status,resizable,left=" + left + ",top=" + top +
 				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
-
 			window.open(url, "subWind", windowFeatures, "POS");
 		}
 		//$$('konyakosmeggy').invoke('on', 'click', popUpCal();
@@ -364,9 +119,6 @@
 			});
 		});
 	</script>
-
 </body>
-
-
 
 </html>

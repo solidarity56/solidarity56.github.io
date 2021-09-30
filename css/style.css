@@ -741,17 +741,17 @@ html {
 /* AKTí­V ELEMEK */
 /* 7-Tanműhely */
 #asztal {
-	width:705px;
-	height:243px;
+	width:721px;
+	height:226px;
 	position:absolute;
-	top:570px;
-	left:351px
+	top:578px;
+	left:335px
 }
-#tancukrasz1 {
-	width:155px;
-	height:209px;
+#tancukrasz {
+	width:466px;
+	height:235px;
 	position:absolute;
-	top:405px;
+	top:385px;
 	left:493px
 }
 #tyuktal {
@@ -774,6 +774,14 @@ html {
 	position:absolute;
 	top:471px;
 	left:771px
+}
+#bubi-3 {
+	width:720px;
+	height:159px;
+	position:absolute;
+	top:275px;
+	left:386px;
+	display:none;
 }
 /* AKTí­V ELEMEK */
 /* 8-Tanműhely */
