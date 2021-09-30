@@ -597,6 +597,13 @@ html {
 	top:487px;
 	left:728px
 }
+#vasarlok {
+	width:47px;
+	height:103px;
+	position:absolute;
+	top:401px;
+	left:660px
+}
 /* AKTíV ELEMEK */
 /* 4-Családi szalon */
 /* apa + kalap*/
@@ -664,6 +671,8 @@ html {
 	top:262px;
 	left:1168px
 }
+/* AKTíV ELEMEK */
+/* 5-Dolgozó szoba */
 #konyvek {
 	width:62px;
 	height:62px;
@@ -679,11 +688,11 @@ html {
 	left:830px
 }
 #gerbeaud {
-	width:287px;
+	width:288px;
 	height:319px;
 	position:absolute;
-	top:358px;
-	left:555px
+	top:360px;
+	left:553px
 }
 #kuglerkep {
 	width:173px;

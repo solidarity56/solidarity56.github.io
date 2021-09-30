@@ -30,66 +30,19 @@
 				onclick="window.location.href='cukraszmuhely.html'" style="cursor: pointer;"></div>
 			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
-			<div id="konyakosmeggy" title="tanulás" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
-			<div id="info" title="történetek" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
-
-			<a href="#">
-				<img id="cukifenyek" src="images/cukifenyek_alap.png" width="798" height="228" />
-				<script>
-					$(function () {
-						$("#cukifenyek").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/cukifenyek_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/cukifenyek_alap.png");
-						}
-						);
-					});
-				</script>
-			</a>
+			<div id="konyakosmeggy" title="tanulás" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='#'" style="cursor: pointer;"></div>
+			<div id="info" title="történetek" onmouseover="this.style.cursor='pointer';"
+				onclick="window.location.href='#'" style="cursor: pointer;"></div>
 
 			<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
 			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='cukraszmuhely.html'"
 				style="cursor: pointer;"></div>
 
-			<a href="#">
-				<img id="cukivirag" src="images/cukivirag_alap.png" width="62" height="62" />
-				<script>
-					$(function () {
-						$("#cukivirag").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/cukivirag_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/cukivirag_alap.png");
-						}
-						);
-					});
-				</script>
-			</a>
+			<a href=""><img id="cukivirag" src="images/cukivirag_aktiv.png" width="61" height="62"></a>
 
-			<a href="#">
-				<img id="cukidoboz" src="images/cukidoboz_alap.png" width="62" height="62" />
-				<script>
-					$(function () {
-						$("#cukidoboz").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/cukidoboz_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/cukidoboz_alap.png");
-						}
-						);
-					});
-				</script>
-			</a>
+			<a href=""><img id="cukidoboz" src="images/cukidoboz_aktiv.png" width="62" height="62"></a>
 
 			<a href="#">
 				<img id="ferfi2" src="images/apa_kalap-fent.gif" width="102" height="268" />
@@ -121,82 +74,34 @@
 				</script>
 			</a>
 
-			<a href="#">
-				<img id="kekno" class="effect" src="images/kekno_alap.png" width="105" height="198" />
-				<script>
-					$(function () {
-						$("#kekno").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/kekno_fenyes.png");
-								$(this).fadeIn(70);
-								$(this).addClass('jsbTooltip');
-								$(this).attr('title', 'Hol késett? Már fél órája várjuk.');
-								$('.jsbTooltip').jBox('Tooltip', {
-									attach: '.tooltip',
-									trigger: 'mouseenter',
-									position: {
-										x: 'center',
-										y: 'top'
-									},
-									offset: { x: 30 },
-									width: 200
-								});
-							});
-						}, function () {
-							$(this).attr("src", "images/kekno_alap.png");
-							$(this).removeClass('jsbTooltip');
-						}
-						);
-					});
-				</script>
-			</a>
+			<img id="kekno" class="effect" src="images/kekno_aktiv.png" width="105" height="198">
 
-			<a href="#">
-				<img id="lilano" class="effect" src="images/lilano_alap.png" width="134" height="243" />
-				<script>
-					$(function () {
-						$("#lilano").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/lilano_fenyes.png");
-								$(this).fadeIn(70);
-								$(this).addClass('jsbTooltip');
-								$(this).attr('title', 'Itt voltam. Nem emlékszel? Együtt rohantunk ki előlük. Ki akarna munkásokkal mutatkozni?');
-								$('.jsbTooltip').jBox('Tooltip', {
-									attach: '.tooltip',
-									trigger: 'mouseenter',
-									position: {
-										x: 'center',
-										y: 'top'
-									},
-									offset: { x: -10 },
-									width: 200
-								});
-							});
-						}, function () {
-							$(this).attr("src", "images/lilano_alap.png");
-							$(this).removeClass('jsbTooltip');
-						}
-						);
-					});
-				</script>
-			</a>
+			<img id="lilano" class="effect" src="images/lilano_aktiv.png" width="134" height="243">
 
+<!-- 			<img id="bubi-3" src="images/vasarlok_bubi.png" width="282" height="313">
 			<a href="#">
-				<img id="cukikave" src="images/cukikave_alap.png" width="62" height="62" />
+				<img id="vasarlok" src="images/vasarlok_aktiv.png" width="145" height="242">
 				<script>
-					$(function () {
-						$("#cukikave").hover(function () {
-							$(this).fadeOut(10, function () {
-								$(this).attr("src", "images/cukikave_fenyes.png");
-								$(this).fadeIn(70);
-							});
-						}, function () {
-							$(this).attr("src", "images/cukikave_alap.png");
+					$("#vasarlok").hover(function () {
+						var x = document.getElementById("bubi-1");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
 						}
-						);
+					}, function () {
+						var x = document.getElementById("bubi-1");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
 					});
+
 				</script>
-			</a>
+			</a> -->
+
+			<a href=""><img id="cukikave" src="images/cukikave_aktiv.png" width="62" height="62"></a>
 
 			<div class="vasarlo1" id="szoveg1" onmouseover="this.style.cursor='pointer';"
 				title="Szörnyen drága ez a hely."></div>
