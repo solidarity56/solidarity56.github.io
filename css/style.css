@@ -820,7 +820,7 @@ background-color: aqua;
 	display:none;
 }
 /* AKTí­V ELEMEK */
-/* 8-Tanműhely */
+/* 8-Dolgozói szoba */
 #borond1 {
 	width:60px;
 	height:60px;
@@ -850,11 +850,19 @@ background-color: aqua;
 	left:724px
 }
 #barnano {
-	width:196px;
+	width:501px; /*199px*/
 	height:378px;
 	position:absolute;
-	top:356px;
-	left:388px;
+	top:355px;
+	left:385px;
+}
+#bubi-7 {
+	width:529px;
+	height:220px;
+	position:absolute;
+	top:253px;
+	left:475px;
+	display:none;
 }
 /* AKTí­V ELEMEK */
 /* Üzletek */
