@@ -41,6 +41,25 @@
 				<div class="popupCloseButton">&times;</div>
 			</div>
 
+			<div class="popupMap" id="infotext2"><strong>Térkép</strong><br><br>
+				<div class="kor-menu-center"></div>
+				<div class="kor-menu">
+					<ul>
+						<li><a class="egy" href="#">Vörös Gerbaud</a></li>
+						<li><a class="ketto" href="#">A Császár Cukrászda</a></li>
+						<li><a class="harom" href="#">Édes Gyarmatok</a></li>
+						<li><a class="negy" href="#">Cukrászműhely</a></li>
+						<li><a class="ot" href="#">Cukrászda</a></li>
+						<li><a class="hat" href="#">Családi Szalon</a></li>
+						<li><a class="het" href="#">Dolgozószoba</a></li>
+						<li><a class="nyolc" href="#">Csomagolóműhely</a></li>
+						<li><a class="kilenc" href="#">Tanműhely</a></li>
+						<li><a class="tiz" href="#">Dolgozói szállás</a></li>
+					</ul>
+				</div>
+				<div class="popupCloseButton2">&times;</div>
+			</div>
+
 			<div id="titles">
 				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
 				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
@@ -55,8 +74,7 @@
 				onclick="window.location.href='dolgozoi-szallas.html'" style="cursor: pointer;"></div>
 			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';"
 				onclick="window.location.href='cukraszda.html'" style="cursor: pointer;"></div>
-			<div id="nyilak" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
+			<a id="map" title="térkép" href="#"></a>
 			<div id="video" title="videó" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
 			<a id="konyakosmeggy" href="#" title="tanulás"></a>
@@ -234,6 +252,7 @@
 	<script>
 		$(document).ready(function () {
 			$('#info').on('click', function (e) {
+				$('.popupMap').fadeOut(90);
 				$('.popupText').fadeIn(90);
 			});
 		});
@@ -264,19 +283,15 @@
 	</script>
 	<!-- MAP BUTTON SCRIPT  -->
 	<script>
-		function popUpCal(url) {
-			var width = 700;
-			var height = 600;
-			var left = parseInt((screen.availWidth / 2) - (width / 2));
-			var top = parseInt((screen.availHeight / 2) - (height / 2));
-			var windowFeatures = "width=" + width + ",height=" + height +
-				",status,resizable,left=" + left + ",top=" + top +
-				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
-			window.open(url, "subWind", windowFeatures, "POS");
-		}
 		$(document).ready(function () {
-			$('#nyilak').on('click', function (e) {
-				popUpCal("https://itsource.us/gerbeaud/terkep");
+			$('#map').on('click', function (e) {
+				$('.popupText').fadeOut(90);
+				$('.popupMap').fadeIn(90);
+			});
+		});
+		$(document).ready(function () {
+			$('.popupCloseButton2').on('click', function (e) {
+				$('.popupMap').fadeOut(90);
 			});
 		});
 	</script>

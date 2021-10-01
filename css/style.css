@@ -67,7 +67,7 @@ html {
 	background-image:url('../images/nav_jobb_nyil.png');
 	background-position:0px 0px
 }
-#nyilak {
+#map {
 	width:43px;
 	height:43px;
 	position:absolute;
@@ -931,6 +931,21 @@ background-color: aqua;
     background: white;
 	z-index: 100;
 }
+.popupMap {
+    position: absolute;
+	padding: 15px;
+    border: 2px solid #999;
+	border-radius: 8px;
+	box-shadow: 10px 10px 60px #555;
+    height: auto;
+    max-width: 585px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    display: none;
+	color:lightsteelblue;
+	z-index: 100;
+}
 .popupCloseButton {
     background: white;
     border: 2px solid #999;
@@ -951,8 +966,33 @@ background-color: aqua;
 .popupCloseButton:hover {
     background-color: #ccc;
 }
+.popupCloseButton2{
+    background: black;
+    border: 2px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+	color: lightgrey;
+}
+.popupCloseButton:hover2 {
+    background-color: #ccc;
+}
 #infotext1 {
 	top:200px;
+	left:500px;
+}
+#infotext2 {
+	top: 150px;
 	left:500px;
 }
 
@@ -976,18 +1016,7 @@ background-color: aqua;
 	font-weight:400;
     background: rgba(125, 223, 236, 0.95);
 }
-/* jBox Tooltip */
-#jBox9, #jBox10 {
-	padding: 8px !important;
-	border: none;
-}
-#jBox9 .jBox-pointer-bottom:after {
-    box-shadow: 1px 1px 2px rgba(63, 39, 41, 0.0) !important;
-}
-#jBox9.jBox-Tooltip .jBox-container {
-    box-shadow: 0 0 3px rgba(241, 11, 30, 0.0) !important;
-}
-
+/* Üzletek */
 .uzletek-class {
 	position: relative;
 	width:900px;
@@ -1046,4 +1075,75 @@ background-color: aqua;
 		rotate3d(0, 0, 0, 0deg);
 	}
   }
-
+/* Térkép */
+  .popupMap {
+	background-color: black;
+	font-family: "Tahoma";
+	/*font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-size: 15px;
+	}
+	.kor-menu li {
+	  list-style: none;
+	  display: inline;
+	}
+	.kor-menu {
+		position: relative;
+		width: 24em;
+		height: 24em;
+		border: dashed 2px #cccccc;
+		border-radius: 50%;
+		margin: 5em auto 7em;
+	}
+	.kor-menu a {
+	  display: block;
+	  position: absolute;
+	  top: 50%; 
+	  left: 50%;
+	  width: 7em; height: 7em;
+	  /* width: 8em; height: 8em;*/
+	  line-height: 7em;
+	  /*line-height: 8em;*/
+	  margin: -3.5em;
+	  -moz-border-radius: 4em;
+	  -webkit-border-radius: 4em;
+	  border-radius: 4em;
+	  text-align: center;
+	  text-decoration: none;
+	  color: black;
+	  box-sizing: border-box;
+	}
+	
+	.kor-menu a.egy {background:#ff0000;opacity: 0.6;}
+	.kor-menu a.ketto  {background:#f7931e;opacity: 0.6;}
+	.kor-menu a.harom {background:#fcee21;opacity: 0.6;}
+	.kor-menu a.negy {background:#fa7f00;opacity: 0.6;}
+	.kor-menu a.ot {background:#8cc63f;opacity: 0.6;}
+	.kor-menu a.hat {background:#057f42;opacity: 0.6;}
+	.kor-menu a.het  {background:#00e5e5;opacity: 0.6;}
+	.kor-menu a.nyolc {background:#426ffc;opacity: 0.6;}
+	.kor-menu a.kilenc {background:#9350d8;opacity: 0.6;}
+	.kor-menu a.tiz {background:#ff00ff;opacity: 0.6;}
+	
+	.kor-menu a.egy:hover {background:#ff0000;opacity: 1.0;}
+	.kor-menu a.ketto:hover {background:#f7931e;opacity: 1.0;}
+	.kor-menu a.harom:hover {background:#fcee21;opacity: 1.0;}
+	.kor-menu a.negy:hover {background:#fa7f00;opacity: 1.0;}
+	.kor-menu a.ot:hover {background:#8cc63f;opacity: 1.0;}
+	.kor-menu a.hat:hover {background:#057f42;opacity: 1.0;}
+	.kor-menu a.het:hover {background:#00e5e5;opacity: 1.0;}
+	.kor-menu a.nyolc:hover {background:#426ffc;opacity: 1.0;}
+	.kor-menu a.kilenc:hover {background:#9350d8;opacity: 1.0;}
+	.kor-menu a.tiz:hover {background:#ff00ff;opacity: 1.0;}
+	
+	/* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 12em translate is half the container */
+	 /* 360/10= 36 = 10 elements rotate the element every 36deg. 12em? translate is half the container */
+	.kor-menu .egy { transform: rotate(36deg) translate(12em) rotate(-36deg); -webkit-transform: rotate(36deg) translate(12em) rotate(-36deg); -ms-transform: rotate(36deg) translate(12em) rotate(-36deg);}
+	.kor-menu .ketto { transform: rotate(72deg) translate(12em) rotate(-72deg); -webkit-transform: rotate(72deg) translate(12em) rotate(-72deg); -ms-transform: rotate(72deg) translate(12em) rotate(-72deg);}
+	.kor-menu .harom { transform: rotate(108deg) translate(12em) rotate(-108deg); -webkit-transform: rotate(108deg) translate(12em) rotate(-108deg); -ms-transform: rotate(108deg) translate(12em) rotate(-108deg);}
+	.kor-menu .negy { transform: rotate(144deg) translate(12em) rotate(-144deg); -webkit-transform: rotate(144deg) translate(12em) rotate(-144deg); -ms-transform:rotate(144deg) translate(12em) rotate(-144deg);}
+	.kor-menu .ot { transform: rotate(180deg) translate(12em) rotate(-180deg); -webkit-transform: rotate(180deg) translate(12em) rotate(-180deg); -ms-transform: rotate(180deg) translate(12em) rotate(-180eg);}
+	.kor-menu .hat { transform: rotate(216deg) translate(12em) rotate(-216deg); -webkit-transform: rotate(216deg) translate(12em) rotate(-216deg); -ms-transform: rotate(216deg) translate(12em) rotate(-216deg);}
+	.kor-menu .het { transform: rotate(252deg) translate(12em) rotate(-252deg); -webkit-transform: rotate(252deg) translate(12em) rotate(-252deg); -ms-transform: rotate(252deg) translate(12em) rotate(-252deg);}
+	.kor-menu .nyolc { transform: rotate(288deg) translate(12em) rotate(-288deg); -webkit-transform: rotate(288deg) translate(12em) rotate(-288deg); -ms-transform: rotate(288deg) translate(12em) rotate(-288deg);}
+	.kor-menu .kilenc { transform: rotate(324deg) translate(12em) rotate(-324deg); -webkit-transform: rotate(324deg) translate(12em) rotate(-324deg); -ms-transform: rotate(324deg) translate(12em) rotate(-324deg);}
+	.kor-menu .tiz { transform: rotate(360deg) translate(12em) rotate(-360deg); -webkit-transform: rotate(360deg) translate(12em) rotate(-360deg); -ms-transform: rotate(360deg) translate(12em) rotate(-360deg);}
