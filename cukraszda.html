@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/bubble.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -88,57 +89,35 @@
 				</script>
 			</a>
 
-
-
-			<a href="#">
-				<img id="ferfi2" src="images/apa_kalap-fent.gif" width="102" height="268" />
-				<script>
-					$(function () {
-						$("#ferfi2").hover(function () {
-							// $(this).fadeOut(10, function () {
-								$(this).attr("src", "images/apa_kalap-lent.gif");
-/* 								$(this).fadeIn(70);
-								$(this).addClass('jsbTooltip');
-								$(this).attr('title', 'Elhozom a Gerbeaudba, de még ilyenkor se hagy békét… na szép.');
-								$('.jsbTooltip').jBox('Tooltip', {
-									attach: '.tooltip',
-									trigger: 'mouseenter',
-									position: {
-										x: 'center',
-										y: 'top'
-									},
-									//offset: {x: 30},
-									width: 102
-								});
- */							});
-						}, function () {
-							$(this).attr("src", "images/apa_kalap-fent.gif");
-							// $(this).removeClass('jsbTooltip');
-					});
-				</script>
-			</a>
-
+			<div id="kalapterulet"><div id="kalap"><img src="images/kalap.gif"></div></div>
 
 			<a href=""><img id="cukikave" src="images/cukikave_aktiv.png" width="62" height="62"></a>
 
-	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
-	<script>
-		function popUpCal(url) {
-			var width = 700;
-			var height = 600;
-			var left = parseInt((screen.availWidth / 2) - (width / 2));
-			var top = parseInt((screen.availHeight / 2) - (height / 2));
-			var windowFeatures = "width=" + width + ",height=" + height +
-				",status,resizable,left=" + left + ",top=" + top +
-				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
-			window.open(url, "subWind", windowFeatures, "POS");
-		}
-		$(document).ready(function () {
-			$('#konyakosmeggy').on('click', function (e) {
-				popUpCal("konyakosmeggy/-cukraszda.html");
-			});
-		});
-	</script>
+			<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
+			<script>
+				function popUpCal(url) {
+					var width = 700;
+					var height = 600;
+					var left = parseInt((screen.availWidth / 2) - (width / 2));
+					var top = parseInt((screen.availHeight / 2) - (height / 2));
+					var windowFeatures = "width=" + width + ",height=" + height +
+						",status,resizable,left=" + left + ",top=" + top +
+						"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+					window.open(url, "subWind", windowFeatures, "POS");
+				}
+				$(document).ready(function () {
+					$('#konyakosmeggy').on('click', function (e) {
+						popUpCal("konyakosmeggy/-cukraszda.html");
+					});
+				});
+			</script>
+
+			<!-- KALAP LEESIK SCRIPT  -->
+			<script>
+				$('#kalapterulet').mouseover(function (event) {
+					$('#kalap').toggleClass('drop');
+				});
+			</script>
 
 </body>
 

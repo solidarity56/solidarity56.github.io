@@ -185,10 +185,10 @@ html {
 	left:50%;
 	margin-left:-790px;
 	margin-top:-450px;
-
+background-color: aqua;
 }
 #gerbeaud-cukraszda {
-	background:url('../images/cukraszda_alap2.jpg') 0 0 no-repeat
+	background:url('../images/cukraszda_alap2.jpg') 0 0 no-repeat;
 }
 #gerbeaud-cukraszmuhely {
 	background:url('../images/cukraszmuhely_alap2.jpg') 0 0 no-repeat
@@ -367,14 +367,6 @@ html {
 	position:absolute;
 	top:490px;
 	left:480px;
-}
-/* apa + kalap*/
-.ferfi2 {
-	width:102px;
-	height:268px;
-	position:absolute;
-	top:413px;
-	left:952px
 }
 .holgy {
 	width:50px;
@@ -594,7 +586,7 @@ html {
 	width:453px;
 	height:304px;
 	position:absolute;
-	top:339px;
+	top:339px; /*339*/
 	left:898px;
 	display:none;
 }
@@ -617,19 +609,25 @@ html {
 	width:47px;
 	height:103px;
 	position:absolute;
-	top:401px;
-	left:660px
+	top:451px;
+	left:690px
+}
+#kalapterulet {
+	width:100px;
+	height:120px;
+	position:absolute;
+	top:528px;
+	left:952px;
+}
+#kalap {
+	width:37px;
+	height:34px;
+	position:absolute;
+	top:0px; /*523*/
+	left:82px; /*1032*/
 }
 /* AKTíV ELEMEK */
 /* 4-Családi szalon */
-/* apa + kalap*/
-#ferfi2 {
-	width:102px;
-	height:268px;
-	position:absolute;
-	top:413px;
-	left:952px
-}
 #kandallodisz {
 	width:61px;
 	height:61px;
@@ -990,7 +988,7 @@ html {
 	background-image:url('../images/uzletek.jpg');
 
 }
-
+/* Ugráló kislány */
 .girl {
 	align-self: flex-end;
 	animation-duration: 2s;
@@ -1011,3 +1009,31 @@ html {
 	64%  { transform: scale(1,1)      translateY(0); }
 	100% { transform: scale(1,1)      translateY(0); }
 }
+/* Kalap leesik */
+.drop {
+	animation: drop 1.2s forwards;
+  }
+  @keyframes drop {
+	0% {
+	  transform-origin: center;
+	  opacity: 1;
+	}
+	20% {
+	  transform: 
+		translate3d(0, 20px, 0)
+		rotate3d(0, 0, 1, -10deg);
+	  opacity: 1;
+	}
+	40%, 45% {
+	  transform: 
+		translate3d(0, -20px, 0)
+		rotate3d(0, 0, 1, 10deg);
+	  opacity: 1;
+	}
+	to {
+	  opacity: 1;
+	  transform: 
+		translate3d(0, 110px, 0)
+		rotate3d(0, 0, 0, 0deg);
+	}
+  }
