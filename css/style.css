@@ -922,11 +922,11 @@ html {
 	font-family:'Bahnschrift', serif;
 	font-size:18px;
 	font-weight:400;
-    background: rgba(125, 223, 236, 0.95);
+    background: white;
 	z-index: 100;
 }
 .popupCloseButton {
-    background: rgba(125, 223, 236, 0.95);
+    background: white;
     border: 2px solid #999;
     border-radius: 50px;
     cursor: pointer;
