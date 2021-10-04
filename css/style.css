@@ -517,6 +517,13 @@ background-color: aqua;
 	top:433px;
 	left:736px
 }
+#szeletel {
+	width:146px;
+	height:49px;
+	position:absolute;
+	top:482px;
+	left:516px
+}
 #cetlik {
 	width:61px;
 	height:62px;
@@ -1075,6 +1082,19 @@ background-color: aqua;
 		rotate3d(0, 0, 0, 0deg);
 	}
   }
+
+/* Kés, üvegek remegés */
+  @-webkit-keyframes rumble {
+    0% {-webkit-transform: rotate(0deg);}
+    25% {-webkit-transform: translate(2px, 0px) rotate(-3deg);}
+    50% {-webkit-transform: translate(0px, -2px) rotate(0deg);}
+    75% {-webkit-transform: translate(-2px, 0px) rotate(3deg);}
+    100% {-webkit-transform: translate(0px, 2px) rotate(0deg);} 
+}
+
+.rumble, .rumble-hover:hover, .rumble-active:active {
+    -webkit-animation: rumble .25s infinite linear;
+}
 /* Térkép */
   .popupMap {
 	background-color: black;
