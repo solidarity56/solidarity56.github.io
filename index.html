@@ -41,9 +41,9 @@
 				<div class="popupCloseButton">&times;</div>
 			</div>
 
-			<div class="popupMap" id="infotext2"><strong>Térkép</strong><br><br>
-				<div class="kor-menu-center"></div>
+			<div class="popupMap" id="infotext2"><strong>TÉRKÉP</strong><br><br>
 				<div class="kor-menu">
+					<img id="terkep" src="images/terkep.png" width="500" height="500">
 					<ul>
 						<li><a class="egy" href="#">Vörös Gerbaud</a></li>
 						<li><a class="ketto" href="#">A Császár Cukrászda</a></li>
@@ -57,7 +57,7 @@
 						<li><a class="tiz" href="#">Dolgozói szállás</a></li>
 					</ul>
 				</div>
-				<div class="popupCloseButton2">&times;</div>
+				<div class="popupCloseButton">&times;</div>
 			</div>
 
 			<div id="titles">
@@ -290,7 +290,7 @@
 			});
 		});
 		$(document).ready(function () {
-			$('.popupCloseButton2').on('click', function (e) {
+			$('.popupCloseButton').on('click', function (e) {
 				$('.popupMap').fadeOut(90);
 			});
 		});

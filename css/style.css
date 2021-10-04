@@ -938,23 +938,27 @@ background-color: aqua;
     background: white;
 	z-index: 100;
 }
+.kor-terkep {
+}
 .popupMap {
     position: absolute;
-	padding: 15px;
+	padding: 20px;
     border: 2px solid #999;
 	border-radius: 8px;
 	box-shadow: 10px 10px 60px #555;
     height: auto;
-    max-width: 585px;
-    min-height: 100px;
+    max-width: 525px;
+    min-height: 540px;
     vertical-align: middle;
     width: 60%;
     display: none;
-	color:lightsteelblue;
+	color:black;
+	background-color: rgba(222, 222, 222, 0.8);
 	z-index: 100;
 }
 .popupCloseButton {
     background: white;
+	color: #555;
     border: 2px solid #999;
     border-radius: 50px;
     cursor: pointer;
@@ -973,33 +977,12 @@ background-color: aqua;
 .popupCloseButton:hover {
     background-color: #ccc;
 }
-.popupCloseButton2{
-    background: black;
-    border: 2px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-	color: lightgrey;
-}
-.popupCloseButton:hover2 {
-    background-color: #ccc;
-}
 #infotext1 {
 	top:200px;
 	left:500px;
 }
 #infotext2 {
-	top: 150px;
+	top: 170px;
 	left:500px;
 }
 
@@ -1097,39 +1080,34 @@ background-color: aqua;
 }
 /* Térkép */
   .popupMap {
-	background-color: black;
 	font-family: "Tahoma";
 	/*font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-size: 15px;
 	}
-	.kor-menu li {
+.kor-menu li {
 	  list-style: none;
 	  display: inline;
 	}
-	.kor-menu {
+.kor-menu {
 		position: relative;
 		width: 24em;
 		height: 24em;
-		border: dashed 2px #cccccc;
-		border-radius: 50%;
-		margin: 5em auto 7em;
+	/* 	border: dashed 2px #cccccc;
+		border-radius: 50%; 
+		margin: 5em auto 7em; */
 	}
 	.kor-menu a {
 	  display: block;
 	  position: absolute;
-	  top: 50%; 
-	  left: 50%;
-	  width: 7em; height: 7em;
-	  /* width: 8em; height: 8em;*/
-	  line-height: 7em;
-	  /*line-height: 8em;*/
+	  top: 75%; 
+	  left: 75%;
+	  width: 2.2em; height: 2.2em;
 	  margin: -3.5em;
 	  -moz-border-radius: 4em;
 	  -webkit-border-radius: 4em;
 	  border-radius: 4em;
-	  text-align: center;
-	  text-decoration: none;
 	  color: black;
+	  text-indent: -9999px;
 	  box-sizing: border-box;
 	}
 	
