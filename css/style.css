@@ -956,6 +956,22 @@ background-color: aqua;
 	background-color: rgba(222, 222, 222, 0.8);
 	z-index: 100;
 }
+.popupShop {
+    position: absolute;
+	padding: 5px;
+    border: 2px solid #999;
+	border-radius: 8px;
+	box-shadow: 10px 10px 60px #555;
+    height: auto;
+    max-width: 912px;
+    min-height: 540px;
+    vertical-align: middle;
+    width: 80%;
+    display: none;
+	color:black;
+	background-color: rgba(222, 222, 222, 0.8);
+	z-index: 100;
+}
 .popupCloseButton {
     background: white;
 	color: #555;
@@ -984,6 +1000,10 @@ background-color: aqua;
 #infotext2 {
 	top: 170px;
 	left:500px;
+}
+#infotext3 {
+	top: 130px;
+	left:300px;
 }
 
 .ui-draggable, .ui-droppable {

@@ -110,4 +110,78 @@ $(document).ready(function () {
     addClass: 'thought'
   });
 
+    // Üzlet
+
+    $('#uzlet1').jBox('Tooltip', {
+      attach: '.tooltip',
+      trigger: 'mouseenter',
+      theme: 'TooltipDark',
+      title: '<strong>Gerbeaud Royal Pavilon</strong>',
+      position: {
+        x: 'center',
+        y: 'top'
+      },
+      width: 400,
+    });
+
+    $('#uzlet2').jBox('Tooltip', {
+      attach: '.tooltip',
+      trigger: 'mouseenter',
+      theme: 'TooltipDark',
+      title: '<strong>Gerbeaud a Royal Nagy Szállodásban</strong>',
+      position: {
+        x: 'center',
+        y: 'top'
+      },
+      width: 400,
+    });
+
+    $('#uzlet3').jBox('Tooltip', {
+      attach: '.tooltip',
+      trigger: 'mouseenter',
+      theme: 'TooltipDark',
+      title: '<strong>Duna utcai csokoládégyár</strong>',
+      position: {
+        x: 'center',
+        y: 'top'
+      },
+      width: 400,
+    });
+
+    $('#uzlet4').jBox('Tooltip', {
+      attach: '.tooltip',
+      trigger: 'mouseenter',
+      theme: 'TooltipDark',
+      title: '<strong>Mozsár utca 14.</strong>',
+      position: {
+        x: 'center',
+        y: 'top'
+      },
+      width: 400,
+    });
+
+    $('#uzlet5').jBox('Tooltip', {
+      attach: '.tooltip',
+      trigger: 'mouseenter',
+      theme: 'TooltipDark',
+      title: '<strong>Gizella tér 7.</strong>',
+      position: {
+        x: 'center',
+        y: 'top'
+      },
+      width: 400,
+    });
+
+    $('#uzlet6').jBox('Tooltip', {
+      attach: '.tooltip',
+      trigger: 'mouseenter',
+      theme: 'TooltipDark',
+      title: '<strong>Kossuth Lajos utca 20. és Andrássy út 29.</strong>',
+      position: {
+        x: 'center',
+        y: 'top'
+      },
+      width: 400,
+    });
+
 });
