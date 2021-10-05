@@ -121,7 +121,7 @@ $(document).ready(function () {
         x: 'center',
         y: 'top'
       },
-      width: 400,
+      width: 500,
     });
 
     $('#uzlet2').jBox('Tooltip', {
