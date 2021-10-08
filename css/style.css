@@ -8,12 +8,6 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 		url('../fonts/bahnschrift.ttf') format('truetype'),
 		url('../fonts/bahnschrift.svg#Bahnschrift') format('svg')
 }
-.effect {animation: luktet 4s linear infinite;}
-@keyframes luktet {
-0% {opacity: 1;}
-50% {opacity: .1;}
-100% {opacity: 1;}
-}
 html {
 	overflow-y:scroll
 }
@@ -1041,6 +1035,31 @@ background-color: aqua;
 	background-image:url('../images/uzletek.jpg');
 
 }
+/* Pulzálás */
+.effect {animation: luktet 4s linear infinite;}
+@keyframes luktet {
+0% {opacity: 1;}
+50% {opacity: .1;}
+100% {opacity: 1;}
+}
+.effect1 {animation: luktet 3.8s linear infinite;}
+@keyframes luktet {
+	0% {opacity: 1;}
+	50% {opacity: .1;}
+	100% {opacity: 1;}
+}
+.effect2 {animation: luktet 4.2s linear infinite;}
+@keyframes luktet {
+	0% {opacity: 1;}
+	50% {opacity: .1;}
+	100% {opacity: 1;}
+}
+.effect3 {animation: luktet 4.1s linear infinite;}
+@keyframes luktet {
+	0% {opacity: 1;}
+	50% {opacity: .1;}
+	100% {opacity: 1;}
+}
 /* Ugráló kislány */
 .girl {
 	align-self: flex-end;
@@ -1055,10 +1074,10 @@ background-color: aqua;
 }
 @keyframes ugrik-hopp {
 	0%   { transform: scale(1,1)      translateY(0); }
-	10%  { transform: scale(1.1,.9)   translateY(0); }
-	30%  { transform: scale(.9,1.1)   translateY(-100px); }
-	50%  { transform: scale(1.05,.95) translateY(0); }
-	57%  { transform: scale(1,1)      translateY(-7px); }
+	10%  { transform: scale(1.02,.97)   translateY(0); }
+	30%  { transform: scale(.98,1.03)   translateY(-30px); }
+	50%  { transform: scale(1.02,.97) translateY(0); }
+	57%  { transform: scale(1,1)      translateY(-5px); }
 	64%  { transform: scale(1,1)      translateY(0); }
 	100% { transform: scale(1,1)      translateY(0); }
 }
