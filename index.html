@@ -110,7 +110,7 @@
 				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
 				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
 			</div>
-<!-- 		<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
+			<!-- 		<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
 				style="cursor: pointer;"></div>
 			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='index.html'"
 				style="cursor: pointer;"></div> -->
@@ -145,32 +145,32 @@
 				</script>
 			</a>
 
-			<a href="#"> <img id="auto" class="forward-animate" src="images/auto_alap.png" width="327" height="135">
+			<a href="#"> <img id="auto" class="forward-animate" src="images/auto_alap.png" width="326" height="134">
 				<script>
 					$(function () {
 						$("#auto").hover(function () {
 							if ($(this).hasClass('forward-animate')) {
-								$(this).attr("src", "images/auto_fenyes.png");
+								$(this).attr("src", "images/auto_aktiv.png");
 								$(this).fadeIn(0);
 								if (!$(document.querySelector("#auto")).is(':animated')) {
 									playAudio1();
-									$("#auto").animate({ left: "+=750" }, 5000);
+									$("#auto").animate({ left: "+=750" }, 5000, function () { $("#auto").attr("src", "images/auto_alap.png") });
 									$(this).removeClass('forward-animate');
 									$(this).addClass('backward-animate');
 								}
 							}
 							else {
-								$(this).attr("src", "images/auto_fenyes.png");
+								$(this).attr("src", "images/auto_aktiv.png");
 								$(this).fadeIn(0);
 								if (!$(document.querySelector("#auto")).is(':animated')) {
 									playAudio2();
-									$("#auto").animate({ left: "-=750" }, 5000);
+									$("#auto").animate({ left: "-=750" }, 5000, function () { $("#auto").attr("src", "images/auto_alap.png") });
 									$(this).removeClass('backward-animate')
 									$(this).addClass('forward-animate')
 								}
 							}
 						}, function () {
-							$(this).attr("src", "images/auto_alap.png");
+							$(this).attr("src", "images/auto_fenyes.png");
 						}
 						);
 					});
