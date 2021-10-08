@@ -942,12 +942,12 @@ background-color: aqua;
 }
 .popupMap {
     position: absolute;
-	padding: 20px;
+	padding: 15px 20px;
     border: 2px solid #999;
 	border-radius: 8px;
 	box-shadow: 10px 10px 60px #555;
     height: auto;
-    max-width: 525px;
+    max-width: 584px;
     min-height: 540px;
     vertical-align: middle;
     width: 60%;
