@@ -114,7 +114,7 @@ $(document).ready(function () {
 
     $('#uzlet1').jBox('Tooltip', {
       attach: '.tooltip',
-      trigger: 'mouseenter',
+      trigger: 'click',
       theme: 'TooltipDark',
       title: '<strong>Gerbeaud Royal Pavilon</strong>',
       position: {
