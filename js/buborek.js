@@ -112,7 +112,7 @@ $(document).ready(function () {
 
     // Üzlet
 
-    $('#uzlet1').jBox('Tooltip', {
+ /*    $('#uzlet1').jBox('Tooltip', {
       attach: '.tooltip',
       trigger: 'click',
       theme: 'TooltipDark',
@@ -182,6 +182,6 @@ $(document).ready(function () {
         y: 'top'
       },
       width: 400,
-    });
+    }); */
 
 });

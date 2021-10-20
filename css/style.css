@@ -873,47 +873,107 @@ background-color: aqua;
 }
 /* AKTí­V ELEMEK */
 /* Üzletek */
+#bubi-sarga {
+	width:130px;
+	height:73px;
+	position:absolute;
+	top:80px;
+	left:430px;
+	display:none;
+	z-index: 1;
+}
 #uzlet1 {
 	width:153px;
 	height:114px;
 	position:absolute;
 	top:139px;
-	left:370px
+	left:370px;
+	cursor: pointer;
+}
+#bubi-zold {
+	width:204px;
+	height:82px;
+	position:absolute;
+	top:265px;
+	left:20px;
+	display:none;
+	z-index: 1;
 }
 #uzlet2 {
 	width:103px;
 	height:119px;
 	position:absolute;
 	top:310px;
-	left:172px
+	left:172px;
+	cursor: pointer;
+}
+#bubi-narancs {
+	width:151px;
+	height:71px;
+	position:absolute;
+	top:212px;
+	left:200px;
+	display:none;
+	z-index: 1;
 }
 #uzlet3 {
 	width:134px;
 	height:168px;
 	position:absolute;
 	top:264px;
-	left:274px
+	left:274px;
+	cursor: pointer;
+}
+#bubi-szurke {
+	width:133px;
+	height:77px;
+	position:absolute;
+	top:472px;
+	left:394px;
+	display:none;
+	z-index: 1;
 }
 #uzlet4 {
 	width:125px;
 	height:119px;
 	position:absolute;
 	top:359px;
-	left:384px
+	left:384px;
+	cursor: pointer;
+}
+#bubi-piros {
+	width:116px;
+	height:76px;
+	position:absolute;
+	top:185px;
+	left:536px;
+	display:none;
+	z-index: 1;
 }
 #uzlet5 {
 	width:133px;
 	height:168px;
 	position:absolute;
 	top:263px;
-	left:488px
+	left:488px;
+	cursor: pointer;
+}
+#bubi-kek {
+	width:199px;
+	height:87px;
+	position:absolute;
+	top:242px;
+	left:627px;
+	display:none;
+	z-index: 1;
 }
 #uzlet6 {
 	width:103px;
 	height:116px;
 	position:absolute;
 	top:310px;
-	left:621px
+	left:621px;
+	cursor: pointer;
 }
 
 .hiddenPic {
@@ -971,6 +1031,25 @@ background-color: aqua;
 	background-color: rgba(222, 222, 222, 0.8);
 	z-index: 100;
 }
+.popupUzlet {
+    position: absolute;
+	padding: 20px;
+    border: 2px solid #999;
+	border-radius: 8px;
+	box-shadow: 10px 10px 60px #555;
+    max-width: 550px;
+	min-height: 300px;
+    max-height: 550px;
+	overflow-y: auto;
+    width: 60%;
+    /* display: none; */
+	font-family:'Bahnschrift', serif;
+	font-size:18px;
+	font-weight:400;
+	text-align: justify;
+    background: white;
+	z-index: 100;
+}
 .popupCloseButton {
     background: white;
 	color: #555;
@@ -983,13 +1062,36 @@ background-color: aqua;
     position: absolute;
     top: 5px;
     right: 5px;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 30px;
+	font-weight: 100;
+    line-height: 28px;
     width: 30px;
     height: 30px;
     text-align: center;
 }
 .popupCloseButton:hover {
+    background-color: #ccc;
+}
+.popupCloseButtonUzlet {
+    background: white;
+	color: #555;
+    border: 2px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 30px;
+	font-weight: 100;
+    line-height: 28px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButtonUzlet:hover {
     background-color: #ccc;
 }
 #infotext1 {
@@ -1004,6 +1106,16 @@ background-color: aqua;
 	top: 130px;
 	left:300px;
 }
+#infouzlet1,
+#infouzlet2, 
+#infouzlet3, 
+#infouzlet4, 
+#infouzlet5, 
+#infouzlet6 {
+	top: 40px;
+	left:175px;
+	display: none;
+}
 
 /* Üzletek */
 .uzletek-class {
@@ -1012,7 +1124,6 @@ background-color: aqua;
 	height:630px;
 	background-position: left top;
 	background-image:url('../images/uzletek.jpg');
-
 }
 /* Pulzálás */
 .effect {animation: luktet 4s linear infinite;}
