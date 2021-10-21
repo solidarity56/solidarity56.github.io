@@ -976,10 +976,15 @@ background-color: aqua;
 	cursor: pointer;
 }
 
-.hiddenPic {
-	display:none
+/* Üzletek */
+.uzletek-class {
+	position: relative;
+	width:900px;
+	height:630px;
+	background-position: left top;
+	background-image:url('../images/uzletek.jpg');
 }
-
+/* Üzletek popup */
 .popupText {
     position: absolute;
 	padding: 20px;
@@ -990,7 +995,6 @@ background-color: aqua;
 	min-height: 300px;
     max-height: 550px;
 	overflow-y: auto;
-    /* vertical-align: middle; */
     width: 60%;
     display: none;
 	font-family:'Bahnschrift', serif;
@@ -1032,17 +1036,16 @@ background-color: aqua;
 	z-index: 100;
 }
 .popupUzlet {
-    position: absolute;
-	padding: 20px;
+    position: relative;
+	padding: 20px 15px;
     border: 2px solid #999;
 	border-radius: 8px;
 	box-shadow: 10px 10px 60px #555;
-    max-width: 550px;
+    max-width: 600px;
 	min-height: 300px;
     max-height: 550px;
 	overflow-y: auto;
-    width: 60%;
-    /* display: none; */
+    width: 62%;
 	font-family:'Bahnschrift', serif;
 	font-size:18px;
 	font-weight:400;
@@ -1078,12 +1081,12 @@ background-color: aqua;
     border: 2px solid #999;
     border-radius: 50px;
     cursor: pointer;
-    display: inline-block;
     font-family: arial;
     font-weight: bold;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+	position: -webkit-sticky;
+    position: sticky;
+	float: right;
+    top: -10px;
     font-size: 30px;
 	font-weight: 100;
     line-height: 28px;
@@ -1113,18 +1116,10 @@ background-color: aqua;
 #infouzlet5, 
 #infouzlet6 {
 	top: 40px;
-	left:175px;
+	left:166px;
 	display: none;
 }
 
-/* Üzletek */
-.uzletek-class {
-	position: relative;
-	width:900px;
-	height:630px;
-	background-position: left top;
-	background-image:url('../images/uzletek.jpg');
-}
 /* Pulzálás */
 .effect {animation: luktet 4s linear infinite;}
 @keyframes luktet {
