@@ -1,403 +1,151 @@
-<!DOCTYPE HTML>
-<html lang="hu_HU">
+<!DOCTYPE html>
+<html lang="hu">
 
 <head>
-	<title>Édes birodalom - Gerbeaud-ház</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/bubble.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<meta property="og:title" content="Édes birodalom - Gerbeaud-ház">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="index.html">
-	<meta property="og:image" content="gerbeaud_haz.jpg">
-	<meta property="og:image:type" content="image/jpeg">
-	<meta property="og:image:width" content="400">
-	<meta property="og:image:height" content="300">
-	<meta property="og:site_name" content="#">
-	<meta property="og:description" content="Édes birodalom – történetek a Gerbeaud-házból">
-	<meta property="og:locale" content="hu_HU">
-	<script src="https:/ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-	<script src="js/jbox.all.min.js"></script>
-	<script src="js/buborek.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coming Soon</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			background: #111;
+			color: #eee;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 4rem;
+			margin-bottom: 0.5rem;
+			letter-spacing: 2px;
+		}
+
+		p {
+			font-size: 1.25rem;
+			margin-bottom: 2rem;
+			color: #ccc;
+		}
+
+		.countdown {
+			display: flex;
+			gap: 1rem;
+			margin-bottom: 2rem;
+		}
+
+		.countdown div {
+			background: #222;
+			padding: 1rem 1.5rem;
+			border-radius: 8px;
+		}
+
+		.countdown div span {
+			display: block;
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+		input[type=email] {
+			padding: 1rem;
+			width: 250px;
+			max-width: 80%;
+			border: none;
+			border-radius: 4px;
+			margin-bottom: 1rem;
+		}
+
+		button {
+			padding: 1rem 2rem;
+			background: #e91e63;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			font-size: 1rem;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background: #d81b60;
+		}
+
+		.social {
+			margin-top: 2rem;
+			display: flex;
+			gap: 1.5rem;
+		}
+
+		.social a {
+			color: #ccc;
+			font-size: 1.5rem;
+			text-decoration: none;
+		}
+
+		@media (max-width:600px) {
+			h1 {
+				font-size: 2.5rem;
+			}
+
+			.countdown span {
+				font-size: 1.5rem;
+			}
+
+			input[type=email] {
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 
 <body>
+	<div class="container">
+		<h1>Coming Soon</h1>
+		<p>Valami izgalmas készül – iratkozz fel, hogy elsőként értesülj!</p>
 
-	<div id="container">
-
-		<div id="haz">
-			<div class="popupText" id="infotext1"><strong>Gerbeaud-ház</strong><br><br>
-				Üdvözöljük látogatóinkat a Gerbeaud Cukrászdánál, ami a 19. század óta ékesíti a budapesti
-				Vörösmarty teret. A napjainkban látható négyemeletes, belső udvarokkal tagolt, szecessziós-késő
-				eklektikus épület magán hordozza egykori híres tulajdonosának, Gerbeaud Emilnek (1854-1919) a
-				kézjegyét, aki 1884-ben érkezett Magyarországra, hogy átvegye Kugler Henrik (1930-1905)
-				cukrászüzletét. Gerbeaud élete végéig azon fáradozott, hogy bővítse és fejlessze vállalkozását.<br><br>
-				A Gerbeaud-ház épületegyüttesében nem csak a cukrászda és a cukrászműhely került kialakításra: az
-				első emeleten a Gerbeaud család lakhelye és a cég központi irodája volt, a másodikon csomagoló
-				működött, a harmadikon tanműhely, a negyediken pedig dolgozói lakások voltak.<br><br>
-				Egykor országszerte számos Gerbeaud üzletbe, gyárba, céges ingatlanba és hirdetésekbe botlottunk
-				volna, mára ez az egy épület maradt fenn abból az ,,Édes Birodalom”-ból, amit a híres cukrász a
-				családjával hosszú évtizedek alatt épített fel. Tartson velünk és ismerje meg az egyik leghíresebb
-				magyarországi cukrász történetét!
-				<div class="popupCloseButton">&times;</div>
-			</div>
-
-			<div class="popupMap" id="infotext2"><strong>TÉRKÉP</strong><br><br>
-				<img id="Terkep" usemap="#Terkep" src="https://itsource.us/gerbeaud/images/terkep_540x540.png" alt="" width="540" height="540" border="0">
-				<map name="Terkep">
-				  <area shape="rect" coords="197,217,337,298" href="#" title="Gerbeaud-ház">
-				  <area shape="poly" coords="183,57,358,60,359,81,287,125,244,110,181,63" href="#" title="Csomagolóműhely" onMouseOver="if(document.images) document.getElementById('Terkep').src= 'https://itsource.us/gerbeaud/images/terkep_540x540-csomagolomuhely.png';" onMouseOut="if(document.images) document.getElementById('Terkep').src= 'https://itsource.us/gerbeaud/images/terkep_540x540.png';">
-				  <area shape="rect" coords="94,103,236,170" href="#" title="Dolgozószoba">
-				  <area shape="rect" coords="334,98,446,171" href="#" title="Tanműhely">
-				  <area shape="rect" coords="42,190,186,257" href="#" title="Családi szalon">
-				  <area shape="rect" coords="340,188,498,258" href="#" title="Dolgozói szállás">
-				  <area shape="rect" coords="41,272,149,340" href="#" title="Cukrászda">
-				  <area shape="rect" coords="347,275,506,341" href="#" title="Vörös Gerbeaud">
-				  <area shape="rect" coords="68,369,199,433" href="#" title="Cukrászműhely">
-				  <area shape="poly" coords="274,373,479,369,466,403,420,434,386,444,275,374" href="#" title="A császári cukrászda">
-				  <area shape="poly" coords="199,423,335,422,351,451,291,487,229,477,199,428" href="#" title="Édes gyarmatok">
-				</map>
-				<div class="popupCloseButton">&times;</div>
-			</div>
-
-			<div class="popupShop" id="infotext3">
-				<div class="uzletek-class">
-					<div id="uzlet1"
-						title="A Gerbeaud Royal Pavilon szezonális nyitva tartassál (tavasztól őszig) várta a vendégeket a Városligetben. Elegáns, napernyős, növényekkel díszített teraszos udvarán a ligetbe látogató hölgyek, urak, gyermekek egyaránt megpihenhettek. Elmajszolhattak egy kis Gerbeaud-féle desszertet, fagylaltot, csokoládét, de ihattak likőrt, kávét, teát és frissítőket. Esténként zenét is hallgathattak a vendégek. A pavilon a hétköznapi működésén túl különféle rendezvényeknek volt helyszíne. Nagyszabású ünnepségeket tartottak benne: díszétkezéseket, koncerteket, klubgyűléseket, egyleti találkozókat, jótékonysági eseményeket és külföldi vendégek fogadását. A Royal Pavilon 1896-1945 között működött. A második világháborúban bombatalálat érte, később már nem került helyreállításra.">
-						<img src="images/uzlet1_temp.png" width="153" height="114"
-							onmouseover="this.src='images/uzlet1_fenyes.png'"
-							onmouseout="this.src='images/uzlet1_temp.png'">
-					</div>
-					<div id="uzlet2"
-						title="Gerbeaud Emil a Royal Nagy Szálloda részvénytársaság befektetői közé tartozott. Az Erzsébet körúton lévő impozáns hotel aljában Gerbeaud fióküzlet működött, aminek törzsközönségét a szállodai vendégek, a környéken lakók és a nagykörúti járókelők adták.">
-						<img src="images/uzlet2_temp.png" width="103" height="119"
-							onmouseover="this.src='images/uzlet2_fenyes.png'"
-							onmouseout="this.src='images/uzlet2_temp.png'">
-					</div>
-					<div id="uzlet3"
-						title="Gerbeaud Emil már 1886-ban a Gizella téren is egy kisebb csokoládégyárat rendezett be. A Millenniumi kiállításon (1896) működőképes, modern gépekkel mutatta be a csokoládégyártás folyamatát a nagyközönségnek. A Gizella téri épület szűkös keretei azonban nem tudtak lépést tartani a gyártási igények növekedésével, ezért 1904-ben a Duna utcai ingatlanjába helyezte át a csokoládéüzemet, amit jelentősen kibővített és modernizált.">
-						<img src="images/uzlet3_temp.png" width="134" height="168"
-							onmouseover="this.src='images/uzlet3_fenyes.png'"
-							onmouseout="this.src='images/uzlet3_temp.png'">
-					</div>
-					<div id="uzlet4"
-						title="Az épületet 1903-ban vásárolta meg Gerbeaud Emil. A zártsorú, belső udvaros egyemeletes épület átépítésre került. Az épület a vállalat haszonépületeként funkcionált. A földszintjén raktárak és garázs helyiségek voltak, míg a felső szinten szolgálati lakások lettek kialakítva a cég munkatársai számára. Gerbeaud dolgozói számára további lakások álltak rendelkezésre a Deák Ferenc utca 13. és a Régiposta utca 2. szám alatt is. Ezek az épületek napjainkban már nem léteznek.">
-						<img src="images/uzlet4_temp.png" width="125" height="119"
-							onmouseover="this.src='images/uzlet4_fenyes.png'"
-							onmouseout="this.src='images/uzlet4_temp.png'">
-					</div>
-					<div id="uzlet5"
-						title="Kugler Henrik 1870-ben nyitotta meg a Gizella téri cukrászdáját, melyet Gerbeaud Emil az 1890-es évekre fokozatosan átvett Kuglertől. Ez vált a Gerbeaud cég központi épületévé, amely cukrászműhelyként, Gerbeaud család lakásaként, dolgozói szállásként és központi irodaként is funkcionált. Az épületben ekkorra már telefon és villanyvilágítás került bevezetésre. A jó elhelyezkedésű főüzlet látogatottságát az is növelte, hogy 1896-ban a földalatti végállomása a Gizella téren létesült. A cukrászdában Kugler idejében megfordult Deák Ferenc, Liszt Ferenc, majd Gerbeaud idejében Erzsébet királyné, Auguszta főhercegnő és számos további híresség.">
-						<img src="images/uzlet5_temp.png" width="133" height="168"
-							onmouseover="this.src='images/uzlet5_fenyes.png'"
-							onmouseout="this.src='images/uzlet5_temp.png'">
-					</div>
-					<div id="uzlet6"
-						title="A Gizella téri, a Royal Szállodai és a városligeti üzleteken kívül Gerbeaud cukrászda működött a Kossuth Lajos utca 20-ban, az Országos Kaszinó palotaépületében, valamint az Andrássy út 29. szám alatt is. Ezek közül az előbbi mára teljesen megszűnt, az utóbbi Művész Kávéház néven ma is üzemel.">
-						<img src="images/uzlet6_temp.png" width="103" height="116"
-							onmouseover="this.src='images/uzlet6_fenyes.png'"
-							onmouseout="this.src='images/uzlet6_temp.png'">
-					</div>
-				</div>
-				<div class="popupCloseButton">&times;</div>
-			</div>
-
-			<div id="titles">
-				<a href="index.html"><img id="logo" width="175" height="150" src="images/birodalom-logo.png"></a>
-				<a href="https://mkvm.hu"><img id="mkvm" width="82" height="48" src="images/mkvm.png"></a>
-			</div>
-			<!-- 		<div id="eng" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
-			<div id="hun" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='index.html'"
-				style="cursor: pointer;"></div> -->
-			<div id="title"></div>
-			<a id="nka" href="https://nka.hu" target="_blank"></a>
-			<div id="balnyil" onmouseover="this.style.cursor='pointer';"
-				onclick="window.location.href='dolgozoi-szallas.html'" style="cursor: pointer;"></div>
-			<div id="jobbnyil" onmouseover="this.style.cursor='pointer';"
-				onclick="window.location.href='cukraszda.html'" style="cursor: pointer;"></div>
-			<a id="map" title="térkép" href="#"></a>
-			<div id="video" title="videó" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='#'"
-				style="cursor: pointer;"></div>
-			<a id="konyakosmeggy" href="#" title="tanulás"></a>
-			<a id="info" href="#" title="történetek"></a>
-
-			<a href="cukraszmuhely.html">
-				<img id="cukraszmuhely" src="images/cukraszmuhely_alap.png" width="394" height="104">
-				<script>
-					$(function () {
-						$("#cukraszmuhely").hover(function () {
-							allActiveOff();
-							$(this).fadeOut(1, function () {
-								$(this).attr("src", "images/cukraszmuhely_fenyes.png");
-								$(this).fadeIn(70);
-							}
-							);
-						}, function () {
-							allActiveOff();
-						}
-						);
-					});
-				</script>
-			</a>
-
-			<a href="#"> <img id="auto" class="forward-animate" src="images/auto_alap.png" width="326" height="134">
-				<script>
-					$(function () {
-						$("#auto").hover(function () {
-							if ($(this).hasClass('forward-animate')) {
-								$(this).attr("src", "images/auto_aktiv.png");
-								$(this).fadeIn(0);
-								if (!$(document.querySelector("#auto")).is(':animated')) {
-									playAudio1();
-									$("#auto").animate({ left: "+=750" }, 5000, function () { $("#auto").attr("src", "images/auto_alap.png") });
-									$(this).removeClass('forward-animate');
-									$(this).addClass('backward-animate');
-								}
-							}
-							else {
-								$(this).attr("src", "images/auto_aktiv.png");
-								$(this).fadeIn(0);
-								if (!$(document.querySelector("#auto")).is(':animated')) {
-									playAudio2();
-									$("#auto").animate({ left: "-=750" }, 5000, function () { $("#auto").attr("src", "images/auto_alap.png") });
-									$(this).removeClass('backward-animate')
-									$(this).addClass('forward-animate')
-								}
-							}
-						}, function () {
-							$(this).attr("src", "images/auto_fenyes.png");
-						}
-						);
-					});
-				</script>
-			</a>
-
-			<a href="#"><img id="cimer" src="images/cimer_aktiv.png" width="42" height="41"></a>
-
-			<img id="kirakat" src="images/kirakat_alap.png" width="173" height="144">
-
-			<img id="cukraszda" src="images/cukraszda_alap.png" width="962" height="98" usemap="#cukraszda-map">
-
-			<map name="cukraszda-map">
-				<area target="" alt="" title="" href="" onmouseenter="elemOn('kirakat')"
-					onmouseleave="elemOff('kirakat')" coords="734,94,731,45,751,29,770,45,769,94" shape="poly">
-
-				<area target="" alt="" title="" href="cukraszda.html" onmouseenter="elemOn('cukraszda')"
-					onmouseleave="elemOff('cukraszda')" coords="304,94,305,19,694,18,697,97,301,97" shape="poly">
-				<area target="" alt="" title="" href="cukraszda.html" onmouseenter="elemOn('cukraszda')"
-					onmouseleave="elemOff('cukraszda')" coords="841,96,839,22,948,8,948,67" shape="poly">
-			</map>
-
-			<a href="csaladi-szalon.html">
-				<img id="csaladiszalon" src="images/csaladiszalon_alap.png" width="575" height="73">
-				<script>
-					$(function () {
-						$("#csaladiszalon").hover(function () {
-							allActiveOff();
-							$(this).fadeOut(1, function () {
-								$(this).attr("src", "images/csaladiszalon_fenyes.png");
-								$(this).fadeIn(20);
-							});
-						}, function () {
-							allActiveOff();
-						}
-						);
-					});
-				</script>
-			</a>
-
-			<a href="tanmuhely.html">
-				<img id="tanmuhely" src="images/tanmuhely_alap.png" width="712" height="109">
-				<script>
-					$(function () {
-						$("#tanmuhely").hover(function () {
-							$(this).fadeOut(1, function () {
-								allActiveOff();
-								$(this).attr("src", "images/tanmuhely_fenyes.png");
-								$(this).fadeIn(20);
-							});
-						}, function () {
-							allActiveOff();
-						}
-						);
-					});
-				</script>
-			</a>
-
-			<a href="csomagolo-muhely.html">
-				<img id="csomagolomuhely" src="images/csomagolomuhely_alap.png" width="650" height="80">
-				<script>
-					$(function () {
-						$("#csomagolomuhely").hover(function () {
-							allActiveOff();
-							$(this).fadeOut(1, function () {
-								$(this).attr("src", "images/csomagolomuhely_fenyes.png");
-								$(this).fadeIn(20);
-							});
-						}, function () {
-							allActiveOff();
-						}
-						);
-					});
-				</script>
-			</a>
-
-			<a href="dolgozoszoba.html">
-				<img id="dolgozoszoba" src="images/dolgozoszoba_alap.png" width="215" height="80">
-				<script>
-					$(function () {
-						$("#dolgozoszoba").hover(function () {
-							allActiveOff();
-							$(this).fadeOut(1, function () {
-								$(this).attr("src", "images/dolgozoszoba_fenyes.png");
-								$(this).fadeIn(20);
-							});
-						}, function () {
-							allActiveOff();
-						}
-						);
-					});
-				</script>
-			</a>
-
-			<a href="dolgozoi-szallas.html">
-				<img id="dolgozoiszallas" src="images/dolgozoiszallas_alap.png" width="432" height="137">
-				<script>
-					$(function () {
-						$("#dolgozoiszallas").hover(function () {
-							allActiveOff();
-							$(this).fadeOut(1, function () {
-								$(this).attr("src", "images/dolgozoiszallas_fenyes.png");
-								$(this).fadeIn(20);
-							});
-						}, function () {
-							allActiveOff();
-						}
-						);
-					});
-				</script>
-			</a>
-
+		<div class="countdown" id="countdown">
+			<div><span id="days">00</span>nap</div>
+			<div><span id="hours">00</span>ó</div>
+			<div><span id="minutes">00</span>p</div>
+			<div><span id="seconds">00</span>mp</div>
 		</div>
 
+		<input type="email" placeholder="Email címed" required>
+		<button>Értesítést kérek</button>
+
+		<div class="social">
+			<a href="#" aria-label="Instagram">📷</a>
+			<a href="#" aria-label="Twitter">🐦</a>
+			<a href="#" aria-label="LinkedIn">🔗</a>
+		</div>
 	</div>
 
-	<audio id="audioID" preload="auto">
-		<source src="sound/auto1.mp3"" type=" audio/mpeg">
-	</audio>
-	<audio id="audioID2" preload="auto">
-		<source src="sound/auto2.mp3"" type=" audio/mpeg">
-	</audio>
-	<script src="js/audio.script.js"></script>
-	<!-- INFO BUTTON SCRIPT  -->
 	<script>
-		$(document).ready(function () {
-			$('#info').on('click', function (e) {
-				$('.popupMap').fadeOut(90);
-				$('.popupShop').fadeOut(90);
-				$('.popupText').fadeIn(90);
-			});
-		});
-		$(document).ready(function () {
-			$('.popupCloseButton').on('click', function (e) {
-				$('.popupText').fadeOut(90);
-			});
-		});
-	</script>
-	<!-- MAP BUTTON SCRIPT  -->
-	<script>
-		$(document).ready(function () {
-			$('#map').on('click', function (e) {
-				$('.popupText').fadeOut(90);
-				$('.popupShop').fadeOut(90);
-				$('.popupMap').fadeIn(90);
-			});
-		});
-		$(document).ready(function () {
-			$('.popupCloseButton').on('click', function (e) {
-				$('.popupMap').fadeOut(90);
-			});
-		});
-	</script>
-	<!-- AUTO ONLICK SCRIPT  -->
-	<script>
-		$(document).ready(function () {
-			$('#auto').on('click', function (e) {
-				$('.popupText').fadeOut(90);
-				$('.popupMap').fadeOut(90);
-				$('.popupShop').fadeIn(90);
-			});
-		});
-		$(document).ready(function () {
-			$('.popupCloseButton').on('click', function (e) {
-				$('.popupShop').fadeOut(90);
-			});
-		});
-	</script>
-	<!-- KONYAKOSMEGGY BUTTON SCRIPT  -->
-	<script>
-		function popUpCal(url) {
-			var width = 700;
-			var height = 600;
-			var left = parseInt((screen.availWidth / 2) - (width / 2));
-			var top = parseInt((screen.availHeight / 2) - (height / 2));
-			var windowFeatures = "width=" + width + ",height=" + height +
-				",status,resizable,left=" + left + ",top=" + top +
-				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
-			window.open(url, "subWind", windowFeatures, "POS");
+		// Egyszerű visszaszámláló
+		const launchDate = new Date();
+		launchDate.setDate(launchDate.getDate() + 30); // 30 nap múlva
+		function updateTimer() {
+			const now = new Date();
+			const diff = launchDate - now;
+			if (diff < 0) return;
+			const days = String(Math.floor(diff / 1000 / 60 / 60 / 24)).padStart(2, '0');
+			const hours = String(Math.floor(diff / 1000 / 60 / 60) % 24).padStart(2, '0');
+			const minutes = String(Math.floor(diff / 1000 / 60) % 60).padStart(2, '0');
+			const seconds = String(Math.floor(diff / 1000) % 60).padStart(2, '0');
+			document.getElementById('days').textContent = days;
+			document.getElementById('hours').textContent = hours;
+			document.getElementById('minutes').textContent = minutes;
+			document.getElementById('seconds').textContent = seconds;
 		}
-		$(document).ready(function () {
-			$('#konyakosmeggy').on('click', function (e) {
-				popUpCal("konyakosmeggy/-konyakmeggy.html");
-			});
-		});
-	</script>
-	<!-- VIDEO BUTTON SCRIPT  -->
-	<script>
-		function popUpCal(url) {
-			var width = 980;
-			var height = 480;
-			var left = parseInt((screen.availWidth / 2) - (width / 2));
-			var top = parseInt((screen.availHeight / 2) - (height / 2));
-			var windowFeatures = "width=" + width + ",height=" + height +
-				",status,resizable,left=" + left + ",top=" + top +
-				"screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
-			window.open(url, "subWind", windowFeatures, "POS");
-		}
-		$(document).ready(function () {
-			$('#video').on('click', function (e) {
-				popUpCal("https://itsource.us/gerbeaud/videos");
-			});
-		});
-	</script>
-	<!-- ALL ACTIVE OFF -->
-	<script>
-		function allActiveOff() {
-			$("#cukraszmuhely").attr("src", "images/cukraszmuhely_alap.png");
-			$("#kirakat").attr("src", "images/kirakat_alap.png");
-			$("#csaladiszalon").attr("src", "images/csaladiszalon_alap.png");
-			$("#tanmuhely").attr("src", "images/tanmuhely_alap.png");
-			$("#csomagolomuhely").attr("src", "images/csomagolomuhely_alap.png");
-			$("#dolgozoszoba").attr("src", "images/dolgozoszoba_alap.png");
-			$("#dolgozoiszallas").attr("src", "images/dolgozoiszallas_alap.png");
-		}
-	</script>
-	<!-- AKTíV ELEM ON/OFF -->
-	<script>
-		function elemOn(azon) {
-			var x = document.getElementById(azon);
-			x.src = "images/" + azon + "_aktiv.png";
-		}
-	</script>
-	<script>
-		function elemOff(azon) {
-			var x = document.getElementById(azon);
-			x.src = "images/" + azon + "_alap.png";
-		}
+		setInterval(updateTimer, 1000);
+		updateTimer();
 	</script>
 </body>
 
