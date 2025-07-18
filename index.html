@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Napi lekért szám</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            text-align: center;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        #number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            color: #007acc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mai lekért szám</h1>
+    <div id="number">Betöltés...</div>
+
+    <script>
+        async function fetchNumber() {
+            try {
+                const res = await fetch('number.txt', { cache: 'no-cache' });
+                const txt = await res.text();
+                document.getElementById('number').textContent = txt.trim();
+            } catch (e) {
+                console.error(e);
+                document.getElementById('number').textContent = 'Hiba az adat lekérésekor';
+            }
+        }
+
+        fetchNumber();
+        setInterval(fetchNumber, 60 * 1000); // 1 percenként frissít
+    </script>
+</body>
+
+</html>
